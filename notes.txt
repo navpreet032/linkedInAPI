@@ -1,0 +1,2041 @@
+ubuntu@ip-172-31-39-51:~$ ls
+Desktop    Downloads  Pictures  Templates  inotifyMonitoringScript.sh
+Documents  Music      Public    Videos     linkedin-profile-scraper
+ubuntu@ip-172-31-39-51:~$ cd linkedin-profile-scraper/
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper$ git status
+On branch 0xAA55-liTEST
+Your branch is up to date with 'origin/0xAA55-liTEST'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	loginAngela.js
+	loginFaisalSalesNav.js
+	loginMary.js
+	loginMary.js.save
+	loginMary.js.save.1
+	loginMichelle.js
+	loginNelson.js
+	loginRoy.js
+	loginShekhar.js
+	loginTaylor.js
+	openBrowser.js
+	outputData.csv
+
+nothing added to commit but untracked files present (use "git add" to track)
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper$ pm2 logs
+[TAILING] Tailing last 15 lines for [all] processes (change the value with --lines option)
+/home/ubuntu/.pm2/pm2.log last 15 lines:
+PM2        | 2024-10-09T09:52:01: PM2 log: App [Scraper:0] starting in -fork mode-
+PM2        | 2024-10-09T09:52:01: PM2 log: App [Scraper:0] online
+PM2        | 2024-10-09T16:15:44: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-10-09T16:15:44: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-10-10T16:15:44: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-10-10T16:15:44: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-10-11T16:15:44: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-10-11T16:15:44: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-10-12T16:15:44: PM2 log: [PM2] This PM2 is not UP TO DATE
+PM2        | 2024-10-12T16:15:44: PM2 log: [PM2] Upgrade to version 5.4.2
+PM2        | 2024-10-12T20:02:47: PM2 log: Stopping app:Scraper id:0
+PM2        | 2024-10-12T20:02:47: PM2 log: App [Scraper:0] exited with code [130] via signal [SIGINT]
+PM2        | 2024-10-12T20:02:47: PM2 log: pid=1777054 msg=process killed
+PM2        | 2024-10-12T20:02:47: PM2 log: App [Scraper:0] starting in -fork mode-
+PM2        | 2024-10-12T20:02:47: PM2 log: App [Scraper:0] online
+
+/home/ubuntu/.pm2/logs/Scraper-error.log last 15 lines:
+0|Scraper  | 2024-10-12T03:45:14:     information, please see https://developer.chrome.com/articles/new-headless/.
+0|Scraper  | 2024-10-12T03:45:14:     Consider opting in early by passing `headless: "new"` to `puppeteer.launch()`
+0|Scraper  | 2024-10-12T03:45:14:     If you encounter any bugs, please report them to https://github.com/puppeteer/puppeteer/issues/new/choose.
+0|Scraper  | 2024-10-12T03:45:14: 
+0|Scraper  | 2024-10-12T04:33:03: 
+0|Scraper  | 2024-10-12T04:33:03:   Puppeteer old Headless deprecation warning:
+0|Scraper  | 2024-10-12T04:33:03:     In the near feature `headless: true` will default to the new Headless mode
+0|Scraper  | 2024-10-12T04:33:03:     for Chrome instead of the old Headless implementation. For more
+0|Scraper  | 2024-10-12T04:33:03:     information, please see https://developer.chrome.com/articles/new-headless/.
+0|Scraper  | 2024-10-12T04:33:03:     Consider opting in early by passing `headless: "new"` to `puppeteer.launch()`
+0|Scraper  | 2024-10-12T04:33:03:     If you encounter any bugs, please report them to https://github.com/puppeteer/puppeteer/issues/new/choose.
+0|Scraper  | 2024-10-12T04:33:03: 
+0|Scraper  | 2024-10-12T20:02:49: (node:2000822) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+0|Scraper  | 2024-10-12T20:02:49: (Use `node --trace-warnings ...` to show where the warning was created)
+0|Scraper  | 2024-10-12T20:02:49: (node:2000822) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+
+/home/ubuntu/.pm2/logs/Scraper-out.log last 15 lines:
+0|Scraper  | 2024-10-12T14:01:00: 🚀 ~ file: MessageBroker.js:57 ~ MessageBroker ~ consumer.consume ~ count: { count: 13, vmId: 'VM6', envVmId: 'VM23' }
+0|Scraper  | 2024-10-12T14:01:00: Message not acknowledged due to VM_ID mismatch. Count incremented.
+0|Scraper  | 2024-10-12T16:01:00: 🚀 ~ file: MessageBroker.js:57 ~ MessageBroker ~ consumer.consume ~ count: { count: 13, vmId: 'VM6', envVmId: 'VM23' }
+0|Scraper  | 2024-10-12T16:01:00: Message not acknowledged due to VM_ID mismatch. Count incremented.
+0|Scraper  | 2024-10-12T18:01:01: 🚀 ~ file: MessageBroker.js:57 ~ MessageBroker ~ consumer.consume ~ count: { count: 13, vmId: 'VM6', envVmId: 'VM23' }
+0|Scraper  | 2024-10-12T18:01:01: Message not acknowledged due to VM_ID mismatch. Count incremented.
+0|Scraper  | 2024-10-12T20:00:03: 🚀 ~ file: MessageBroker.js:57 ~ MessageBroker ~ consumer.consume ~ count: { count: 13, vmId: 'VM4', envVmId: 'VM23' }
+0|Scraper  | 2024-10-12T20:00:03: Message not acknowledged due to VM_ID mismatch. Count incremented.
+0|Scraper  | 2024-10-12T20:02:50: Connected Successfully to AMQP
+0|Scraper  | 2024-10-12T20:02:51: Connected scraper successfully with HQ-Sourcing database
+0|Scraper  | 2024-10-12T20:02:51: Waiting for the Message::  hq-server-stag-uat-us-east-1
+0|Scraper  | 2024-10-12T20:02:51: channel created
+0|Scraper  | 2024-10-12T20:02:51: Connected with RabbitMQ
+0|Scraper  | 2024-10-12T20:02:52: Connected Successfully with Redis
+0|Scraper  | 2024-10-12T20:02:52: Connected to Redis successfully.
+
+
+
+0|Scraper  | 2024-10-12T20:09:11: 🚀 ~ file: MessageBroker.js:57 ~ MessageBroker ~ consumer.consume ~ count: { count: 3, vmId: 'VM3', envVmId: 'VM23' }
+0|Scraper  | 2024-10-12T20:09:11: Message not acknowledged due to VM_ID mismatch. Count incremented.
+
+
+0|Scraper  | 2024-10-12T20:10:12: 🚀 ~ file: MessageBroker.js:57 ~ MessageBroker ~ consumer.consume ~ count: { count: 3, vmId: 'VM23', envVmId: 'VM23' }
+0|Scraper  | 2024-10-12T20:10:12:  Incoming request from RabbitMQ with data ====> {
+0|Scraper  | 2024-10-12T20:10:12:   event: 46,
+0|Scraper  | 2024-10-12T20:10:12:   email: 'preetpannu032@gmail.com',
+0|Scraper  | 2024-10-12T20:10:12:   password: 'lpuiamin',
+0|Scraper  | 2024-10-12T20:10:12:   userId: 1648,
+0|Scraper  | 2024-10-12T20:10:12:   bCookie: '"v=2&621bdec2-af16-4e28-8c3e-10bee118cf13"',
+0|Scraper  | 2024-10-12T20:10:12:   bsCookie: '"v=1&20241011155133b380fe01-5fc3-4e66-85e0-08e7ddf566c7AQGo0uNrDNPZxDkgLbsnc-MAJJmjsfxs"',
+0|Scraper  | 2024-10-12T20:10:12:   VM_ID: 'VM23',
+0|Scraper  | 2024-10-12T20:10:12:   count: 3
+0|Scraper  | 2024-10-12T20:10:12: }
+0|Scraper  | 2024-10-12T20:10:12: [2001199:2001199:1012/201012.934233:ERROR:chrome_browser_cloud_management_controller.cc(162)] Cloud management controller initialization aborted as CBCM is not enabled.
+0|Scraper  | 2024-10-12T20:10:13: 
+0|Scraper  | 2024-10-12T20:10:13: DevTools listening on ws://127.0.0.1:43037/devtools/browser/067bb72f-7961-416b-822a-f4cfe3a7e105
+0|Scraper  | 2024-10-12T20:10:13: [2001227:2001227:1012/201013.363725:ERROR:gpu_memory_buffer_support_x11.cc(49)] dri3 extension not supported.
+0|Scraper  | 2024-10-12T20:10:13: Puppeteer browser PID: 2001199
+0|Scraper  | 2024-10-12T20:10:13: [2001199:2001211:1012/201013.901477:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.StartServiceByName: object_path= /org/freedesktop/DBus: org.freedesktop.DBus.Error.NoReply: Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.
+0|Scraper  | 2024-10-12T20:10:14: [2001199:2001211:1012/201014.905901:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.StartServiceByName: object_path= /org/freedesktop/DBus: org.freedesktop.DBus.Error.NoReply: Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.
+0|Scraper  | 2024-10-12T20:10:18: [2001227:2001227:1012/201018.555772:ERROR:gl_utils.cc(402)] [.WebGL-0x5b800840300]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+0|Scraper  | 2024-10-12T20:10:25: [2001227:2001227:1012/201025.770188:ERROR:gl_utils.cc(402)] [.WebGL-0x5b803167400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+0|Scraper  | 2024-10-12T20:10:31: status before while loop : CREDENTIALS_PUT
+0|Scraper  | 2024-10-12T20:10:31: status inside while loop : CREDENTIALS_PUT
+0|Scraper  | 2024-10-12T20:10:31: url in start of login function : https://www.linkedin.com/login/
+0|Scraper  | 2024-10-12T20:10:31: inside if
+0|Scraper  | 2024-10-12T20:10:37: put credentials..
+0|Scraper  | 2024-10-12T20:10:37: logging in..
+
+
+0|Scraper  | 2024-10-12T20:11:12: navigation error TimeoutError: Navigation timeout of 10000 ms exceeded
+0|Scraper  | 2024-10-12T20:11:12:     at LifecycleWatcher._LifecycleWatcher_createTimeoutPromise (/home/ubuntu/linkedin-profile-scraper/node_modules/puppeteer-core/lib/cjs/puppeteer/common/LifecycleWatcher.js:162:12)
+0|Scraper  | 2024-10-12T20:11:12:     at async Frame.waitForNavigation (/home/ubuntu/linkedin-profile-scraper/node_modules/puppeteer-core/lib/cjs/puppeteer/common/Frame.js:255:23)
+0|Scraper  | 2024-10-12T20:11:12:     at async CDPPage.waitForNavigation (/home/ubuntu/linkedin-profile-scraper/node_modules/puppeteer-core/lib/cjs/puppeteer/common/Page.js:448:16)
+0|Scraper  | 2024-10-12T20:11:12:     at async LinkedInBrowserLoginScraper.putLoginCredentials (/home/ubuntu/linkedin-profile-scraper/browser.js:310:7)
+0|Scraper  | 2024-10-12T20:11:12:     at async LinkedInBrowserLoginScraper.startloginprocess (/home/ubuntu/linkedin-profile-scraper/browser.js:549:9)
+0|Scraper  | 2024-10-12T20:11:12:     at async LinkedInBrowserLoginScraper.start (/home/ubuntu/linkedin-profile-scraper/browser.js:974:11)
+0|Scraper  | 2024-10-12T20:11:12:     at async MessageBrokerHandlers (/home/ubuntu/linkedin-profile-scraper/handlers/MessageBrokerHandlers.js:3862:26)
+0|Scraper  | 2024-10-12T20:11:12:     at async /home/ubuntu/linkedin-profile-scraper/services/MessageBroker.js:102:15
+
+0|Scraper  | 2024-10-12T20:11:35: status inside while loop : CREDENTIALS_PUT
+0|Scraper  | 2024-10-12T20:11:35: url in start of login function : https://www.linkedin.com/checkpoint/challenge/AgHAnKupq4VpyQAAAZKCWxgrux-gkvkPHNCUAuhKYQNq0I73Mzm0uyvcQMVssMEespU4ppwZtP2EfjPsz_8CoGA1WqshJg?ut=37grDnjFaXFrs1
+0|Scraper  | 2024-10-12T20:11:35: inside if
+0|Scraper  | 2024-10-12T20:11:39: captcha solving...
+0|Scraper  | 2024-10-12T20:11:48: captcha status : CAPTCHA_REQUESTED
+0|Scraper  | 2024-10-12T20:11:52: captcha status : CAPTCHA_REQUESTED
+0|Scraper  | 2024-10-12T20:11:56: captcha status : CAPTCHA_REQUESTED
+0|Scraper  | 2024-10-12T20:12:00: captcha status : CAPTCHA_REQUESTED
+0|Scraper  | 2024-10-12T20:12:04: captcha status : CAPTCHA_REQUESTED
+0|Scraper  | 2024-10-12T20:12:09: captcha status : CAPTCHA_SOLVED
+0|Scraper  | 2024-10-12T20:12:09: fetch the verify token from the DB
+0|Scraper  | 2024-10-12T20:12:09: captcha verifying started by token
+0|Scraper  | 2024-10-12T20:12:09: in verify captcha funstion
+0|Scraper  | 2024-10-12T20:12:18: page after verification token reloaded...
+0|Scraper  | 2024-10-12T20:12:25: captcha solved and waiting to identify the next page
+0|Scraper  | 2024-10-12T20:12:25: error on processing the li page no feed page after captcha
+0|Scraper  | 2024-10-12T20:12:29: status inside while loop : IN_PROGRESS
+0|Scraper  | 2024-10-12T20:12:29: url in start of login function : https://www.linkedin.com/checkpoint/challengesV2/AQFtcwbB8UJrrgAAAZKCXDBPcwGm4nzKJ3TNOwmXlE0xVQey1s1Zdg8Up0lhxc7QcLwlbsPTNq-D89FRHR3jv-yzx8shh6LBBQ?ut=3MbF2Vh3yYFrs1
+0|Scraper  | 2024-10-12T20:12:29: inside if
+0|Scraper  | 2024-10-12T20:12:32: inside app verification checking..
+0|Scraper  | 2024-10-12T20:12:34: text for app verificatrion : Check your LinkedIn app
+0|Scraper  | 2024-10-12T20:12:34: linkedin app notification required
+0|Scraper  | 2024-10-12T20:12:34: app notification ..
+0|Scraper  | 2024-10-12T20:12:42: page while app verification reloaded...
+0|Scraper  | 2024-10-12T20:12:56: page while app verification reloaded...
+
+0|Scraper  | 2024-10-12T20:13:24: [2001227:2001227:1012/201324.166902:ERROR:gl_utils.cc(402)] [.WebGL-0x10d8116c6d80]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+0|Scraper  | 2024-10-12T20:13:29: login successfull...
+0|Scraper  | 2024-10-12T20:13:34: logged in successfully
+0|Scraper  | 2024-10-12T20:13:35: liCookie AQEDATJzM0sEmoBYAAABkoJcqaUAAAGSpmktpU4AHtKXeGWQ53arCd4YarVoGj7PSicJqFNB4GyRnz8dZCsFmajitVZipcZfIvqySyAcDNcI2pwH75wtlp_EB1r8toKjVMdi9tLYdOVsHuYooaeMC2MC
+0|Scraper  | 2024-10-12T20:13:35: bCookie "v=2&a943043b-7ab1-426c-85c7-840b4231110f"
+0|Scraper  | 2024-10-12T20:13:35: bsCookie "v=1&202410122010171c489b0d-0102-4991-84f0-de83d5137697AQEFFUTNjhnZUpsXXbOPemPeWDW5m8eU"
+0|Scraper  | 2024-10-12T20:13:35: waiting...
+0|Scraper  | 2024-10-12T20:13:37: result for authorization for user is [object Object]
+0|Scraper  | 2024-10-12T20:13:37: Puppeteer process ID for user 1648: 2001199
+0|Scraper  | 2024-10-12T20:13:37: CLOSING PUPPETEER BROWSER.... .
+^C
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper$ cd user_sessions/
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ ls
+1309  1648  1823
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ ls
+1309  1648  1823
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ ls
+1309  1648  1823
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ ls
+1309  1648  1823
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ ls
+1309  1648  1823
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ ls
+1309  1648  1823
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ sl
+Command 'sl' not found, but can be installed with:
+sudo apt install sl
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ ls
+1309  1648  1823
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ ls
+1309  1648  1823
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ ls
+1309  1648  1823
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ ls
+1309  1648  1823
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ ls
+1309  1648  1823
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ ls
+1309  1648  1823
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ ls
+1309  1648  1823
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ cd ..
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper$ ls
+README.md            linkedIn-message                 linkedInRecruiterInmailScraper.js  loginShekhar.js
+app.js               linkedIn-recruiter               linkedInRecruiterScrapper.js       loginTaylor.js
+browser.js           linkedIn-salesNav                linkedInSalesNavScraper.js         node_modules
+config.js            linkedIn-search                  linkedInSearchScrapper.js          openBrowser.js
+downloadProfile.js   linkedIn-sections                linkedinPDFScraper.js              outputData.csv
+enums                linkedInCompanySearchScraper.js  loginAngela.js                     package-lock.json
+error-screenshots    linkedInConnectionScraper.js     loginFaisalSalesNav.js             package.json
+fetchProfilePdf      linkedInInmailScraper.js         loginMary.js                       schema
+handlers             linkedInJobScraper.js            loginMary.js.save                  services
+input.csv            linkedInLogin.js                 loginMary.js.save.1                user_sessions
+linkedIn-api         linkedInLoginScraper.js          loginMichelle.js                   utils.js
+linkedIn-connection  linkedInMessageScraper.js        loginNelson.js
+linkedIn-inmail      linkedInProfileScrapper.js       loginRoy.js
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper$ ls
+README.md            linkedIn-message                 linkedInRecruiterInmailScraper.js  loginShekhar.js
+app.js               linkedIn-recruiter               linkedInRecruiterScrapper.js       loginTaylor.js
+browser.js           linkedIn-salesNav                linkedInSalesNavScraper.js         node_modules
+config.js            linkedIn-search                  linkedInSearchScrapper.js          openBrowser.js
+downloadProfile.js   linkedIn-sections                linkedinPDFScraper.js              outputData.csv
+enums                linkedInCompanySearchScraper.js  loginAngela.js                     package-lock.json
+error-screenshots    linkedInConnectionScraper.js     loginFaisalSalesNav.js             package.json
+fetchProfilePdf      linkedInInmailScraper.js         loginMary.js                       schema
+handlers             linkedInJobScraper.js            loginMary.js.save                  services
+input.csv            linkedInLogin.js                 loginMary.js.save.1                user_sessions
+linkedIn-api         linkedInLoginScraper.js          loginMichelle.js                   utils.js
+linkedIn-connection  linkedInMessageScraper.js        loginNelson.js
+linkedIn-inmail      linkedInProfileScrapper.js       loginRoy.js
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper$ cd user_sessions/
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ ls
+1309  1648  1823
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ ls
+1309  1648  1823
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ cat /proc/2001227/stat
+cat: /proc/2001227/stat: No such file or directory
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ 
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ ls
+1309  1648  1823
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 2), reused 4 (delta 2), pack-reused 0 (from 0)
+Unpacking objects: 100% (4/4), 427 bytes | 85.00 KiB/s, done.
+From https://github.com/HireQuotient/linkedin-profile-scraper
+   8f5a4b7..1f77e82  0xAA55-liTEST -> origin/0xAA55-liTEST
+Updating 8f5a4b7..1f77e82
+Fast-forward
+ handlers/MessageBrokerHandlers.js | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ pm2 restart 0 
+Use --update-env to update environment variables
+[PM2] Applying action restartProcessId on app [0](ids: [ '0' ])
+[PM2] [Scraper](0) ✓
+┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐
+│ id │ name               │ mode     │ ↺    │ status    │ cpu      │ memory   │
+├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤
+│ 0  │ Scraper            │ fork     │ 61   │ online    │ 0%       │ 21.9mb   │
+└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ ls
+1309  1648  1823
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ 
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ 
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ 
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ 
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ 
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ ls
+1309  1648  1823
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper/user_sessions$ client_loop: send disconnect: Broken pipe
+➜  ~ 
+➜  ~ 
+➜  ~ vm23                               
+Welcome to Ubuntu 22.04.3 LTS (GNU/Linux 6.5.0-1015-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sat Oct 12 20:32:00 UTC 2024
+
+  System load:  0.0078125          Processes:             266
+  Usage of /:   38.3% of 48.27GB   Users logged in:       1
+  Memory usage: 28%                IPv4 address for ens5: 172.31.39.51
+  Swap usage:   12%
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+111 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+3 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+New release '24.04.1 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+*** System restart required ***
+Last login: Sat Oct 12 20:22:56 2024 from 42.105.9.40
+ubuntu@ip-172-31-39-51:~$ cd linkedin-profile-scraper/
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 1), reused 4 (delta 1), pack-reused 0 (from 0)
+Unpacking objects: 100% (4/4), 910 bytes | 303.00 KiB/s, done.
+From https://github.com/HireQuotient/linkedin-profile-scraper
+   1f77e82..83b8dcb  0xAA55-liTEST -> origin/0xAA55-liTEST
+Updating 1f77e82..83b8dcb
+Fast-forward
+ testingScripts/openLoginBrowser.js | 57 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 57 insertions(+)
+ create mode 100644 testingScripts/openLoginBrowser.js
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper$ 
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper$ 
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper$ 
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper$ 
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper$ 
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper$ 
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper$ ls
+README.md            linkedIn-message                 linkedInRecruiterInmailScraper.js  loginShekhar.js
+app.js               linkedIn-recruiter               linkedInRecruiterScrapper.js       loginTaylor.js
+browser.js           linkedIn-salesNav                linkedInSalesNavScraper.js         node_modules
+config.js            linkedIn-search                  linkedInSearchScrapper.js          openBrowser.js
+downloadProfile.js   linkedIn-sections                linkedinPDFScraper.js              outputData.csv
+enums                linkedInCompanySearchScraper.js  loginAngela.js                     package-lock.json
+error-screenshots    linkedInConnectionScraper.js     loginFaisalSalesNav.js             package.json
+fetchProfilePdf      linkedInInmailScraper.js         loginMary.js                       schema
+handlers             linkedInJobScraper.js            loginMary.js.save                  services
+input.csv            linkedInLogin.js                 loginMary.js.save.1                testingScripts
+linkedIn-api         linkedInLoginScraper.js          loginMichelle.js                   user_sessions
+linkedIn-connection  linkedInMessageScraper.js        loginNelson.js                     utils.js
+linkedIn-inmail      linkedInProfileScrapper.js       loginRoy.js
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper$ cd ..
+ubuntu@ip-172-31-39-51:~$ ls
+Desktop    Downloads  Pictures  Templates  inotifyMonitoringScript.sh
+Documents  Music      Public    Videos     linkedin-profile-scraper
+ubuntu@ip-172-31-39-51:~$ nohup inotifyMonitoringScript.sh &
+[1] 2002776
+ubuntu@ip-172-31-39-51:~$ nohup: ignoring input and appending output to 'nohup.out'
+nohup: failed to run command 'inotifyMonitoringScript.sh': No such file or directory
+
+[1]+  Exit 127                nohup inotifyMonitoringScript.sh
+ubuntu@ip-172-31-39-51:~$ 
+ubuntu@ip-172-31-39-51:~$ ls
+Desktop    Downloads  Pictures  Templates  inotifyMonitoringScript.sh  nohup.out
+Documents  Music      Public    Videos     linkedin-profile-scraper
+ubuntu@ip-172-31-39-51:~$ cat nohup.out 
+ubuntu@ip-172-31-39-51:~$ rm nohup.out 
+ubuntu@ip-172-31-39-51:~$ bash inotifyMonitoringScript.sh 
+Setting up watches.  Beware: since -r was given, this may take a while!
+Watches established.
+
+
+
+
+
+
+
+
+
+
+
+
+^C
+ubuntu@ip-172-31-39-51:~$ 
+ubuntu@ip-172-31-39-51:~$ 
+ubuntu@ip-172-31-39-51:~$ ls
+Desktop    Downloads  Pictures  Templates  inotifyMonitoringScript.sh
+Documents  Music      Public    Videos     linkedin-profile-scraper
+ubuntu@ip-172-31-39-51:~$ cd linkedin-profile-scraper/
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper$ ls
+README.md              linkedIn-inmail                  linkedInProfileScrapper.js         loginRoy.js
+app.js                 linkedIn-message                 linkedInRecruiterInmailScraper.js  loginShekhar.js
+browser.js             linkedIn-recruiter               linkedInRecruiterScrapper.js       loginTaylor.js
+config.js              linkedIn-salesNav                linkedInSalesNavScraper.js         node_modules
+directory_monitor.log  linkedIn-search                  linkedInSearchScrapper.js          openBrowser.js
+downloadProfile.js     linkedIn-sections                linkedinPDFScraper.js              outputData.csv
+enums                  linkedInCompanySearchScraper.js  loginAngela.js                     package-lock.json
+error-screenshots      linkedInConnectionScraper.js     loginFaisalSalesNav.js             package.json
+fetchProfilePdf        linkedInInmailScraper.js         loginMary.js                       schema
+handlers               linkedInJobScraper.js            loginMary.js.save                  services
+input.csv              linkedInLogin.js                 loginMary.js.save.1                testingScripts
+linkedIn-api           linkedInLoginScraper.js          loginMichelle.js                   user_sessions
+linkedIn-connection    linkedInMessageScraper.js        loginNelson.js                     utils.js
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper$ 
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper$ 
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper$ 
+ubuntu@ip-172-31-39-51:~/linkedin-profile-scraper$ client_loop: send disconnect: Broken pipe
+➜  ~ 
+➜  ~ 
+➜  ~ 
+➜  ~ 
+➜  ~ cd /Users/admin/Desktop/HQ-POC/HQ-linkedInAPI.v2/demo
+➜  demo node index.js 
+this.cookiesDir /Users/admin/Desktop/HQ-POC/HQ-linkedInAPI.v2/cookies
+Attempting to use cached cookies
+Requesting new cookies.
+cookies lang=v=2&lang=en-us; JSESSIONID="ajax:0969536195514348212"; bcookie="v=2&54845148-dbed-40df-8e70-016f7baddff8"; bscookie="v=1&2024101313282672baa878-37f0-45df-8cb2-068e20eedf7dAQEw_Ss7p0J7-b_-d8rVr0lmA2tsK1qg"; lidc="b=TGST04:s=T:r=T:a=T:p=T:g=3312:u=1:x=1:i=1728826106:t=1728912506:v=2:sig=AQFzDnsHPP5OAGt4mN0lzA1xbNgrRGsx"
+Authentication error: Request failed with status code 401
+
+node:internal/process/promises:289
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+AxiosError: Request failed with status code 401
+    at settle (/Users/admin/Desktop/HQ-POC/node_modules/axios/dist/node/axios.cjs:2019:12)
+    at Unzip.handleStreamEnd (/Users/admin/Desktop/HQ-POC/node_modules/axios/dist/node/axios.cjs:3135:11)
+    at Unzip.emit (node:events:532:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/admin/Desktop/HQ-POC/node_modules/axios/dist/node/axios.cjs:4287:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.doAuthenticationRequest (/Users/admin/Desktop/HQ-POC/HQ-linkedInAPI.v2/core/client.js:135:24)
+    at async Client.authenticate (/Users/admin/Desktop/HQ-POC/HQ-linkedInAPI.v2/core/client.js:78:5) {
+  code: 'ERR_BAD_REQUEST',
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http', 'fetch' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: {
+      FormData: [Function: FormData] {
+        LINE_BREAK: '\r\n',
+        DEFAULT_CONTENT_TYPE: 'application/octet-stream'
+      },
+      Blob: [class Blob]
+    },
+    validateStatus: [Function: validateStatus],
+    headers: Object [AxiosHeaders] {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/x-www-form-urlencoded',
+      'X-Li-User-Agent': 'LIAuthLibrary:0.0.3 com.linkedin.android:4.1.881 Asus_ASUS_Z01QD:android_9',
+      'User-Agent': 'ANDROID OS',
+      'X-User-Language': 'en',
+      'X-User-Locale': 'en_US',
+      'Accept-Language': 'en-us',
+      Cookie: 'lang=v=2&lang=en-us; JSESSIONID="ajax:0969536195514348212"; bcookie="v=2&54845148-dbed-40df-8e70-016f7baddff8"; bscookie="v=1&2024101313282672baa878-37f0-45df-8cb2-068e20eedf7dAQEw_Ss7p0J7-b_-d8rVr0lmA2tsK1qg"; lidc="b=TGST04:s=T:r=T:a=T:p=T:g=3312:u=1:x=1:i=1728826106:t=1728912506:v=2:sig=AQFzDnsHPP5OAGt4mN0lzA1xbNgrRGsx"',
+      'Content-Length': '107',
+      'Accept-Encoding': 'gzip, compress, deflate, br'
+    },
+    maxRedirects: 0,
+    method: 'post',
+    url: 'https://www.linkedin.com/uas/authenticate',
+    data: 'session_key=preetpannu032%40gmail.com&session_password=lpuiamin&JSESSIONID=%22ajax%3A0969536195514348212%22'
+  },
+  request: <ref *4> ClientRequest {
+    _events: [Object: null prototype] {
+      error: [Function: handleRequestError],
+      socket: [Function: handleRequestSocket],
+      finish: [Function: requestOnFinish]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: true,
+    _last: false,
+    chunkedEncoding: false,
+    shouldKeepAlive: true,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: true,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: '107',
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: true,
+    _header: 'POST /uas/authenticate HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'Content-Type: application/x-www-form-urlencoded\r\n' +
+      'X-Li-User-Agent: LIAuthLibrary:0.0.3 com.linkedin.android:4.1.881 Asus_ASUS_Z01QD:android_9\r\n' +
+      'User-Agent: ANDROID OS\r\n' +
+      'X-User-Language: en\r\n' +
+      'X-User-Locale: en_US\r\n' +
+      'Accept-Language: en-us\r\n' +
+      'Cookie: lang=v=2&lang=en-us; JSESSIONID="ajax:0969536195514348212"; bcookie="v=2&54845148-dbed-40df-8e70-016f7baddff8"; bscookie="v=1&2024101313282672baa878-37f0-45df-8cb2-068e20eedf7dAQEw_Ss7p0J7-b_-d8rVr0lmA2tsK1qg"; lidc="b=TGST04:s=T:r=T:a=T:p=T:g=3312:u=1:x=1:i=1728826106:t=1728912506:v=2:sig=AQFzDnsHPP5OAGt4mN0lzA1xbNgrRGsx"\r\n' +
+      'Content-Length: 107\r\n' +
+      'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+      'Host: www.linkedin.com\r\n' +
+      'Connection: keep-alive\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype] {
+        free: [Function (anonymous)],
+        newListener: [Function: maybeEnableKeylog]
+      },
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype] {
+        keepAlive: true,
+        scheduling: 'lifo',
+        timeout: 5000,
+        noDelay: true,
+        path: null
+      },
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype] {},
+      freeSockets: [Object: null prototype] {
+        'www.linkedin.com:443:::::::::::::::::::::': [
+          TLSSocket {
+            _tlsOptions: [Object],
+            _secureEstablished: true,
+            _securePending: false,
+            _newSessionPending: false,
+            _controlReleased: true,
+            secureConnecting: false,
+            _SNICallback: null,
+            servername: 'www.linkedin.com',
+            alpnProtocol: false,
+            authorized: true,
+            authorizationError: null,
+            encrypted: true,
+            _events: [Object: null prototype],
+            _eventsCount: 9,
+            connecting: false,
+            _hadError: false,
+            _parent: null,
+            _host: 'www.linkedin.com',
+            _closeAfterHandlingError: false,
+            _readableState: [ReadableState],
+            _writableState: [WritableState],
+            allowHalfOpen: false,
+            _maxListeners: undefined,
+            _sockname: null,
+            _pendingData: null,
+            _pendingEncoding: '',
+            server: undefined,
+            _server: null,
+            ssl: [TLSWrap],
+            _requestCert: true,
+            _rejectUnauthorized: true,
+            timeout: 5000,
+            parser: null,
+            _httpMessage: null,
+            [Symbol(alpncallback)]: null,
+            [Symbol(res)]: [TLSWrap],
+            [Symbol(verified)]: true,
+            [Symbol(pendingSession)]: null,
+            [Symbol(async_id_symbol)]: -1,
+            [Symbol(kHandle)]: [TLSWrap],
+            [Symbol(lastWriteQueueSize)]: 0,
+            [Symbol(timeout)]: [Timeout],
+            [Symbol(kBuffer)]: null,
+            [Symbol(kBufferCb)]: null,
+            [Symbol(kBufferGen)]: null,
+            [Symbol(shapeMode)]: true,
+            [Symbol(kCapture)]: false,
+            [Symbol(kSetNoDelay)]: false,
+            [Symbol(kSetKeepAlive)]: true,
+            [Symbol(kSetKeepAliveInitialDelay)]: 1,
+            [Symbol(kBytesRead)]: 0,
+            [Symbol(kBytesWritten)]: 0,
+            [Symbol(connect-options)]: [Object]
+          }
+        ]
+      },
+      keepAliveMsecs: 1000,
+      keepAlive: true,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      maxCachedSessions: 100,
+      _sessionCache: {
+        map: {
+          'www.linkedin.com:443:::::::::::::::::::::': Buffer(2833) [Uint8Array] [
+             48, 130,  11,  13,   2,   1,   1,   2,   2,   3,   3,   4,
+              2, 192,  48,   4,  32, 193, 250,  94, 144,  88, 115,   9,
+            180,  42, 242, 171,  57, 149,  17,  99,  84, 231,  28, 148,
+            196, 101,  51, 139, 219,  73,  73, 161, 177,  86,  30, 163,
+            121,   4,  48, 173,  69,  36, 152,  43, 240, 142, 187, 185,
+            246,  70,  13,   3, 186,  93, 137,  69, 124,  92,  28,  98,
+             35,  16, 246, 171, 164, 130, 216,  32, 106, 211,  93, 137,
+             55, 105,   2, 197, 169,  11, 111,  86, 170, 209, 135, 233,
+            107,  50,  26, 161,
+            ... 2733 more items
+          ]
+        },
+        list: [ 'www.linkedin.com:443:::::::::::::::::::::' ]
+      },
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'POST',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    joinDuplicateHeaders: undefined,
+    path: '/uas/authenticate',
+    _ended: true,
+    res: IncomingMessage {
+      _events: {
+        close: [
+          [Function (anonymous)],
+          [Function: onclose],
+          [Function: onclose]
+        ],
+        error: [
+          [Function: onerror],
+          [Function: onError],
+          [Function: onerror]
+        ],
+        data: undefined,
+        end: [
+          [Function: responseOnEnd],
+          [Function: onend],
+          [Function: onend]
+        ],
+        readable: undefined,
+        finish: [ [Function: onfinish], [Function: onfinish] ]
+      },
+      _readableState: ReadableState {
+        highWaterMark: 65536,
+        buffer: [],
+        bufferIndex: 0,
+        length: 0,
+        pipes: [],
+        awaitDrainWriters: null,
+        [Symbol(kState)]: 110892924
+      },
+      _maxListeners: undefined,
+      socket: null,
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [
+        'Cache-Control',
+        'no-cache, no-store',
+        'Pragma',
+        'no-cache',
+        'Content-Length',
+        '243',
+        'Content-Type',
+        'application/json',
+        'Content-Encoding',
+        'gzip',
+        'Expires',
+        'Thu, 01 Jan 1970 00:00:00 GMT',
+        'Vary',
+        'Accept-Encoding',
+        'WWW-Authenticate',
+        'NONE',
+        'X-FS-UUID',
+        '0006245bb1fb3ff74b9b9ae6f3485d44',
+        'Strict-Transport-Security',
+        'max-age=31536000',
+        'X-Content-Type-Options',
+        'nosniff',
+        'X-Frame-Options',
+        'sameorigin',
+        'Content-Security-Policy',
+        "default-src 'none'; connect-src 'self' *.licdn.com *.linkedin.com cdn.linkedin.oribi.io dpm.demdex.net/id lnkd.demdex.net blob: accounts.google.com/gsi/ linkedin.sc.omtrdc.net/b/ss/ v.clarity.ms/collect *.microsoft.com *.adnxs.com *.tealiumiq.com login.microsoftonline.com; script-src 'report-sample' 'sha256-th47JTnh6tX15SUn/I+GGmsOSXpa7dh5Skner77gxlY=' 'sha256-SSoodjUD3LGm2FfFCVHGqEb8D4UM3OOigidT2UKDcYg=' 'sha256-cKTgdnmO6+hXd85a9wKg1effVfVzenUAtUCyOKY9bQE=' 'sha256-DwtT8+ZZKpxH9pqZNAmJ3GdbLAh5SsYaXR3omTXPCns=' 'sha256-sV9jZa797T0QWBzcU/CNd4tpBhTnh+TFdLnfjlitl28=' 'sha256-aa/Q8CRBDSqTQbCIyioPhZaz+G+dbPyu7BzsjInEmiU=' 'sha256-THuVhwbXPeTR0HszASqMOnIyxqEgvGyBwSPBKBF/iMc=' 'sha256-zTIusdVJJeXz9+iox2a+pdDglzbpRpFVRzEwvW4AONk=' 'sha256-iC8MPqNLw0FDnsBf4DlSkFLNTwhkI85aouiAEB819ic=' 'sha256-2EqrEvcPzl8c6/TSGVvaVMEe7lg700MAz/te4/3kTYY=' 'sha256-y5uW69VItKj51mcc7UD9qfptDVUqicZL+bItEpvVNDw=' 'sha256-DatsFGoJ8gFkzzxo47Ou76WZ+3QBPOQHtBu9p9b3DhA=' 'sha256-k95cyM8gFgPziZe5VQ2IvJvBUVyd5zFt2CokIUwqdHE=' 'sha256-PyCXNcEkzRWqbiNr087fizmiBBrq9O6GGD8eV3P09Ik=' 'sha256-RFqsjmAF1N5LnfpaHFvPqFlVkeIS/DtTAFor+JjJJVc=' 'sha256-2SQ55Erm3CPCb+k03EpNxU9bdV3XL9TnVTriDs7INZ4=' 'sha256-S/KSPe186K/1B0JEjbIXcCdpB97krdzX05S+dHnQjUs=' 'sha256-9pXOIwF4N0gPltLd3AI69lkCjSC2H/Eb3sc5zdmUyYU=' 'sha256-jou6v/Nleyzoc+LXktAv1Fp8M807dVVxy7E/yzVljHc=' 'sha256-6E4e/3dSvj/8JZT2S2yR91mspqM6MyOpKl5lrhHsZa8=' 'sha256-3woF8BZ54TeXM+czaH3aXoaJsVpiamuAKFsXDykAR/Q=' 'sha256-vIfNcKb8ixJg1cfJIoNNYjWcm0lezj1/XpUNFiZyVsU=' 'sha256-cLsHUHFgT/VGX04cZrJ9xgm4HbzTR7ptutkxK+7BlMk=' 'sha256-BwU8jMnQYUhjOpsDVABpfddV/DlP1ZYrFcTumYw7x54=' 'sha256-wz6ika9i3WU3bpUPdhYDZeO/NrDQniDyiscN0LWnyaY=' static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com platform.linkedin.com platform-akam.linkedin.com platform-ecst.linkedin.com platform-azur.linkedin.com snap.licdn.com www.googletagmanager.com/gtag/js www.googleadservices.com/pagead/ www.google.com/pagead/ googleads.g.doubleclick.net/pagead/ adservice.google.com/pagead/ merchantpool1.linkedin.com/mdt.js; img-src data: blob: * android-webview-video-poster:; font-src data: *; style-src 'self' 'unsafe-inline' static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com; media-src 'self' *.licdn.com *.lynda.com; worker-src 'self' blob: static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com; frame-src 'self' www.youtube.com/embed/ www.youtube-nocookie.com/embed/ lnkd.demdex.net smartlock.google.com accounts.google.com player.vimeo.com *.linkedin.com www.slideshare.net *.megaphone.fm *.omny.fm *.sounder.fm msit.powerbi.com app.powerbi.com linkedin.github.io *.licdn.com *.adnxs.com acdn.adnxs-simple.com radar.cedexis.com edge-auth.microsoft.com flo.uri.sh li.protechts.net *.xlgmedia.com *.px-cloud.net merchantpool1.linkedin.com; frame-ancestors 'self' *.www.linkedin.com:*; manifest-src 'self'; report-uri https://www.linkedin.com/security/csp?f=grl",
+        'X-Li-Fabric',
+        'prod-ltx1',
+        'X-Li-Pop',
+        'afd-prod-ltx1-x',
+        'X-Li-Proto',
+        'http/1.1',
+        'X-LI-UUID',
+        'AAYkW7H7P/dLm5rm80hdRA==',
+        'X-Cache',
+        'CONFIG_NOCACHE',
+        'X-MSEdge-Ref',
+        'Ref A: 11FF0CE6BCCE47CBB0AE9D874015017C Ref B: MAA01EDGE1517 Ref C: 2024-10-13T13:28:26Z',
+        'Date',
+        'Sun, 13 Oct 2024 13:28:27 GMT'
+      ],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 401,
+      statusMessage: 'Unauthorized',
+      client: <ref *1> TLSSocket {
+        _tlsOptions: {
+          allowHalfOpen: undefined,
+          pipe: false,
+          secureContext: SecureContext { context: SecureContext {} },
+          isServer: false,
+          requestCert: true,
+          rejectUnauthorized: true,
+          session: undefined,
+          ALPNProtocols: undefined,
+          requestOCSP: undefined,
+          enableTrace: undefined,
+          pskCallback: undefined,
+          highWaterMark: undefined,
+          onread: undefined,
+          signal: undefined
+        },
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        secureConnecting: false,
+        _SNICallback: null,
+        servername: 'www.linkedin.com',
+        alpnProtocol: false,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: [Object: null prototype] {
+          close: [
+            [Function: onSocketCloseDestroySSL],
+            [Function],
+            [Function: onClose]
+          ],
+          end: [Function: onReadableStreamEnd],
+          error: [Function: bound onceWrapper] {
+            listener: [Function: freeSocketErrorListener]
+          },
+          newListener: [Function: keylogNewListener],
+          connect: undefined,
+          secure: [Function: onConnectSecure],
+          session: [Function (anonymous)],
+          free: [Function: onFree],
+          timeout: [Function: onTimeout],
+          agentRemove: [Function: onRemove],
+          data: undefined,
+          drain: undefined
+        },
+        _eventsCount: 9,
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: 'www.linkedin.com',
+        _closeAfterHandlingError: false,
+        _readableState: ReadableState {
+          highWaterMark: 65536,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 60303620
+        },
+        _writableState: WritableState {
+          highWaterMark: 65536,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function (anonymous)]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: <ref *2> TLSWrap {
+          _parent: TCP {
+            reading: [Getter/Setter],
+            onconnection: null,
+            [Symbol(owner_symbol)]: [Circular *1]
+          },
+          _parentWrap: null,
+          _secureContext: SecureContext { context: SecureContext {} },
+          reading: true,
+          onkeylog: [Function: onkeylog],
+          onhandshakestart: {},
+          onhandshakedone: [Function (anonymous)],
+          onocspresponse: [Function: onocspresponse],
+          onnewsession: [Function: onnewsessionclient],
+          onerror: [Function: onerror],
+          [Symbol(owner_symbol)]: [Circular *1],
+          [Symbol(resource_symbol)]: ReusedHandle { type: 61, handle: [Circular *2] }
+        },
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        timeout: 5000,
+        parser: null,
+        _httpMessage: null,
+        [Symbol(alpncallback)]: null,
+        [Symbol(res)]: <ref *2> TLSWrap {
+          _parent: TCP {
+            reading: [Getter/Setter],
+            onconnection: null,
+            [Symbol(owner_symbol)]: [Circular *1]
+          },
+          _parentWrap: null,
+          _secureContext: SecureContext { context: SecureContext {} },
+          reading: true,
+          onkeylog: [Function: onkeylog],
+          onhandshakestart: {},
+          onhandshakedone: [Function (anonymous)],
+          onocspresponse: [Function: onocspresponse],
+          onnewsession: [Function: onnewsessionclient],
+          onerror: [Function: onerror],
+          [Symbol(owner_symbol)]: [Circular *1],
+          [Symbol(resource_symbol)]: ReusedHandle { type: 61, handle: [Circular *2] }
+        },
+        [Symbol(verified)]: true,
+        [Symbol(pendingSession)]: null,
+        [Symbol(async_id_symbol)]: -1,
+        [Symbol(kHandle)]: <ref *2> TLSWrap {
+          _parent: TCP {
+            reading: [Getter/Setter],
+            onconnection: null,
+            [Symbol(owner_symbol)]: [Circular *1]
+          },
+          _parentWrap: null,
+          _secureContext: SecureContext { context: SecureContext {} },
+          reading: true,
+          onkeylog: [Function: onkeylog],
+          onhandshakestart: {},
+          onhandshakedone: [Function (anonymous)],
+          onocspresponse: [Function: onocspresponse],
+          onnewsession: [Function: onnewsessionclient],
+          onerror: [Function: onerror],
+          [Symbol(owner_symbol)]: [Circular *1],
+          [Symbol(resource_symbol)]: ReusedHandle { type: 61, handle: [Circular *2] }
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: <ref *3> Timeout {
+          _idleTimeout: 5000,
+          _idlePrev: TimersList {
+            _idleNext: [Circular *3],
+            _idlePrev: [Circular *3],
+            expiry: 6032,
+            id: -9007199254740990,
+            msecs: 5000,
+            priorityQueuePosition: 2
+          },
+          _idleNext: TimersList {
+            _idleNext: [Circular *3],
+            _idlePrev: [Circular *3],
+            expiry: 6032,
+            id: -9007199254740990,
+            msecs: 5000,
+            priorityQueuePosition: 2
+          },
+          _idleStart: 1951,
+          _onTimeout: [Function: bound ],
+          _timerArgs: undefined,
+          _repeat: null,
+          _destroyed: false,
+          [Symbol(refed)]: false,
+          [Symbol(kHasPrimitive)]: false,
+          [Symbol(asyncId)]: 54,
+          [Symbol(triggerId)]: 52
+        },
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: false,
+        [Symbol(kSetKeepAlive)]: true,
+        [Symbol(kSetKeepAliveInitialDelay)]: 1,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(connect-options)]: {
+          rejectUnauthorized: true,
+          ciphers: 'TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:DHE-RSA-AES256-SHA384:ECDHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA256:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!SRP:!CAMELLIA',
+          checkServerIdentity: [Function: checkServerIdentity],
+          minDHSize: 1024,
+          maxRedirects: 21,
+          maxBodyLength: Infinity,
+          protocol: 'https:',
+          path: null,
+          method: 'GET',
+          headers: [Object: null prototype] {
+            Accept: 'application/json, text/plain, */*',
+            'X-Li-User-Agent': 'LIAuthLibrary:0.0.3 com.linkedin.android:4.1.881 Asus_ASUS_Z01QD:android_9',
+            'User-Agent': 'ANDROID OS',
+            'X-User-Language': 'en',
+            'X-User-Locale': 'en_US',
+            'Accept-Language': 'en-us',
+            'Accept-Encoding': 'gzip, compress, deflate, br'
+          },
+          agents: { http: undefined, https: undefined },
+          auth: undefined,
+          family: undefined,
+          beforeRedirect: [Function: dispatchBeforeRedirect],
+          beforeRedirects: { proxy: [Function: beforeRedirect] },
+          hostname: 'www.linkedin.com',
+          port: 443,
+          agent: undefined,
+          nativeProtocols: { 'http:': [Object], 'https:': [Object] },
+          pathname: '/uas/authenticate',
+          _defaultAgent: Agent {
+            _events: [Object: null prototype],
+            _eventsCount: 2,
+            _maxListeners: undefined,
+            defaultPort: 443,
+            protocol: 'https:',
+            options: [Object: null prototype],
+            requests: [Object: null prototype] {},
+            sockets: [Object: null prototype] {},
+            freeSockets: [Object: null prototype],
+            keepAliveMsecs: 1000,
+            keepAlive: true,
+            maxSockets: Infinity,
+            maxFreeSockets: 256,
+            scheduling: 'lifo',
+            maxTotalSockets: Infinity,
+            totalSocketCount: 1,
+            maxCachedSessions: 100,
+            _sessionCache: [Object],
+            [Symbol(shapeMode)]: false,
+            [Symbol(kCapture)]: false
+          },
+          host: 'www.linkedin.com',
+          keepAlive: true,
+          scheduling: 'lifo',
+          timeout: 5000,
+          noDelay: true,
+          servername: 'www.linkedin.com',
+          _agentKey: 'www.linkedin.com:443:::::::::::::::::::::',
+          encoding: null,
+          keepAliveInitialDelay: 1000
+        }
+      },
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *4],
+      _eventsCount: 4,
+      [Symbol(shapeMode)]: true,
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: {
+        'cache-control': 'no-cache, no-store',
+        pragma: 'no-cache',
+        'content-length': '243',
+        'content-type': 'application/json',
+        expires: 'Thu, 01 Jan 1970 00:00:00 GMT',
+        vary: 'Accept-Encoding',
+        'www-authenticate': 'NONE',
+        'x-fs-uuid': '0006245bb1fb3ff74b9b9ae6f3485d44',
+        'strict-transport-security': 'max-age=31536000',
+        'x-content-type-options': 'nosniff',
+        'x-frame-options': 'sameorigin',
+        'content-security-policy': "default-src 'none'; connect-src 'self' *.licdn.com *.linkedin.com cdn.linkedin.oribi.io dpm.demdex.net/id lnkd.demdex.net blob: accounts.google.com/gsi/ linkedin.sc.omtrdc.net/b/ss/ v.clarity.ms/collect *.microsoft.com *.adnxs.com *.tealiumiq.com login.microsoftonline.com; script-src 'report-sample' 'sha256-th47JTnh6tX15SUn/I+GGmsOSXpa7dh5Skner77gxlY=' 'sha256-SSoodjUD3LGm2FfFCVHGqEb8D4UM3OOigidT2UKDcYg=' 'sha256-cKTgdnmO6+hXd85a9wKg1effVfVzenUAtUCyOKY9bQE=' 'sha256-DwtT8+ZZKpxH9pqZNAmJ3GdbLAh5SsYaXR3omTXPCns=' 'sha256-sV9jZa797T0QWBzcU/CNd4tpBhTnh+TFdLnfjlitl28=' 'sha256-aa/Q8CRBDSqTQbCIyioPhZaz+G+dbPyu7BzsjInEmiU=' 'sha256-THuVhwbXPeTR0HszASqMOnIyxqEgvGyBwSPBKBF/iMc=' 'sha256-zTIusdVJJeXz9+iox2a+pdDglzbpRpFVRzEwvW4AONk=' 'sha256-iC8MPqNLw0FDnsBf4DlSkFLNTwhkI85aouiAEB819ic=' 'sha256-2EqrEvcPzl8c6/TSGVvaVMEe7lg700MAz/te4/3kTYY=' 'sha256-y5uW69VItKj51mcc7UD9qfptDVUqicZL+bItEpvVNDw=' 'sha256-DatsFGoJ8gFkzzxo47Ou76WZ+3QBPOQHtBu9p9b3DhA=' 'sha256-k95cyM8gFgPziZe5VQ2IvJvBUVyd5zFt2CokIUwqdHE=' 'sha256-PyCXNcEkzRWqbiNr087fizmiBBrq9O6GGD8eV3P09Ik=' 'sha256-RFqsjmAF1N5LnfpaHFvPqFlVkeIS/DtTAFor+JjJJVc=' 'sha256-2SQ55Erm3CPCb+k03EpNxU9bdV3XL9TnVTriDs7INZ4=' 'sha256-S/KSPe186K/1B0JEjbIXcCdpB97krdzX05S+dHnQjUs=' 'sha256-9pXOIwF4N0gPltLd3AI69lkCjSC2H/Eb3sc5zdmUyYU=' 'sha256-jou6v/Nleyzoc+LXktAv1Fp8M807dVVxy7E/yzVljHc=' 'sha256-6E4e/3dSvj/8JZT2S2yR91mspqM6MyOpKl5lrhHsZa8=' 'sha256-3woF8BZ54TeXM+czaH3aXoaJsVpiamuAKFsXDykAR/Q=' 'sha256-vIfNcKb8ixJg1cfJIoNNYjWcm0lezj1/XpUNFiZyVsU=' 'sha256-cLsHUHFgT/VGX04cZrJ9xgm4HbzTR7ptutkxK+7BlMk=' 'sha256-BwU8jMnQYUhjOpsDVABpfddV/DlP1ZYrFcTumYw7x54=' 'sha256-wz6ika9i3WU3bpUPdhYDZeO/NrDQniDyiscN0LWnyaY=' static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com platform.linkedin.com platform-akam.linkedin.com platform-ecst.linkedin.com platform-azur.linkedin.com snap.licdn.com www.googletagmanager.com/gtag/js www.googleadservices.com/pagead/ www.google.com/pagead/ googleads.g.doubleclick.net/pagead/ adservice.google.com/pagead/ merchantpool1.linkedin.com/mdt.js; img-src data: blob: * android-webview-video-poster:; font-src data: *; style-src 'self' 'unsafe-inline' static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com; media-src 'self' *.licdn.com *.lynda.com; worker-src 'self' blob: static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com; frame-src 'self' www.youtube.com/embed/ www.youtube-nocookie.com/embed/ lnkd.demdex.net smartlock.google.com accounts.google.com player.vimeo.com *.linkedin.com www.slideshare.net *.megaphone.fm *.omny.fm *.sounder.fm msit.powerbi.com app.powerbi.com linkedin.github.io *.licdn.com *.adnxs.com acdn.adnxs-simple.com radar.cedexis.com edge-auth.microsoft.com flo.uri.sh li.protechts.net *.xlgmedia.com *.px-cloud.net merchantpool1.linkedin.com; frame-ancestors 'self' *.www.linkedin.com:*; manifest-src 'self'; report-uri https://www.linkedin.com/security/csp?f=grl",
+        'x-li-fabric': 'prod-ltx1',
+        'x-li-pop': 'afd-prod-ltx1-x',
+        'x-li-proto': 'http/1.1',
+        'x-li-uuid': 'AAYkW7H7P/dLm5rm80hdRA==',
+        'x-cache': 'CONFIG_NOCACHE',
+        'x-msedge-ref': 'Ref A: 11FF0CE6BCCE47CBB0AE9D874015017C Ref B: MAA01EDGE1517 Ref C: 2024-10-13T13:28:26Z',
+        date: 'Sun, 13 Oct 2024 13:28:27 GMT'
+      },
+      [Symbol(kHeadersCount)]: 40,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: true,
+    host: 'www.linkedin.com',
+    protocol: 'https:',
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kChunkedBuffer)]: [],
+    [Symbol(kChunkedLength)]: 0,
+    [Symbol(kSocket)]: <ref *1> TLSSocket {
+      _tlsOptions: {
+        allowHalfOpen: undefined,
+        pipe: false,
+        secureContext: SecureContext { context: SecureContext {} },
+        isServer: false,
+        requestCert: true,
+        rejectUnauthorized: true,
+        session: undefined,
+        ALPNProtocols: undefined,
+        requestOCSP: undefined,
+        enableTrace: undefined,
+        pskCallback: undefined,
+        highWaterMark: undefined,
+        onread: undefined,
+        signal: undefined
+      },
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'www.linkedin.com',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype] {
+        close: [
+          [Function: onSocketCloseDestroySSL],
+          [Function: bound onceWrapper] {
+            listener: [Function (anonymous)]
+          },
+          [Function: onClose]
+        ],
+        end: [Function: onReadableStreamEnd],
+        error: [Function: bound onceWrapper] {
+          listener: [Function: freeSocketErrorListener]
+        },
+        newListener: [Function: keylogNewListener],
+        connect: undefined,
+        secure: [Function: onConnectSecure],
+        session: [Function (anonymous)],
+        free: [Function: onFree],
+        timeout: [Function: onTimeout],
+        agentRemove: [Function: onRemove],
+        data: undefined,
+        drain: undefined
+      },
+      _eventsCount: 9,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'www.linkedin.com',
+      _closeAfterHandlingError: false,
+      _readableState: ReadableState {
+        highWaterMark: 65536,
+        buffer: [],
+        bufferIndex: 0,
+        length: 0,
+        pipes: [],
+        awaitDrainWriters: null,
+        [Symbol(kState)]: 60303620
+      },
+      _writableState: WritableState {
+        highWaterMark: 65536,
+        length: 0,
+        corked: 0,
+        onwrite: [Function: bound onwrite],
+        writelen: 0,
+        bufferedIndex: 0,
+        pendingcb: 0,
+        [Symbol(kState)]: 17563908,
+        [Symbol(kBufferedValue)]: null,
+        [Symbol(kWriteCbValue)]: [Function (anonymous)]
+      },
+      allowHalfOpen: false,
+      _maxListeners: undefined,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: <ref *2> TLSWrap {
+        _parent: TCP {
+          reading: [Getter/Setter],
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        _parentWrap: null,
+        _secureContext: SecureContext { context: SecureContext {} },
+        reading: true,
+        onkeylog: [Function: onkeylog],
+        onhandshakestart: {},
+        onhandshakedone: [Function (anonymous)],
+        onocspresponse: [Function: onocspresponse],
+        onnewsession: [Function: onnewsessionclient],
+        onerror: [Function: onerror],
+        [Symbol(owner_symbol)]: [Circular *1],
+        [Symbol(resource_symbol)]: ReusedHandle { type: 61, handle: [Circular *2] }
+      },
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      timeout: 5000,
+      parser: null,
+      _httpMessage: null,
+      [Symbol(alpncallback)]: null,
+      [Symbol(res)]: <ref *2> TLSWrap {
+        _parent: TCP {
+          reading: [Getter/Setter],
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        _parentWrap: null,
+        _secureContext: SecureContext { context: SecureContext {} },
+        reading: true,
+        onkeylog: [Function: onkeylog],
+        onhandshakestart: {},
+        onhandshakedone: [Function (anonymous)],
+        onocspresponse: [Function: onocspresponse],
+        onnewsession: [Function: onnewsessionclient],
+        onerror: [Function: onerror],
+        [Symbol(owner_symbol)]: [Circular *1],
+        [Symbol(resource_symbol)]: ReusedHandle { type: 61, handle: [Circular *2] }
+      },
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: -1,
+      [Symbol(kHandle)]: <ref *2> TLSWrap {
+        _parent: TCP {
+          reading: [Getter/Setter],
+          onconnection: null,
+          [Symbol(owner_symbol)]: [Circular *1]
+        },
+        _parentWrap: null,
+        _secureContext: SecureContext { context: SecureContext {} },
+        reading: true,
+        onkeylog: [Function: onkeylog],
+        onhandshakestart: {},
+        onhandshakedone: [Function (anonymous)],
+        onocspresponse: [Function: onocspresponse],
+        onnewsession: [Function: onnewsessionclient],
+        onerror: [Function: onerror],
+        [Symbol(owner_symbol)]: [Circular *1],
+        [Symbol(resource_symbol)]: ReusedHandle { type: 61, handle: [Circular *2] }
+      },
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: <ref *3> Timeout {
+        _idleTimeout: 5000,
+        _idlePrev: TimersList {
+          _idleNext: [Circular *3],
+          _idlePrev: [Circular *3],
+          expiry: 6032,
+          id: -9007199254740990,
+          msecs: 5000,
+          priorityQueuePosition: 2
+        },
+        _idleNext: TimersList {
+          _idleNext: [Circular *3],
+          _idlePrev: [Circular *3],
+          expiry: 6032,
+          id: -9007199254740990,
+          msecs: 5000,
+          priorityQueuePosition: 2
+        },
+        _idleStart: 1951,
+        _onTimeout: [Function: bound ],
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 54,
+        [Symbol(triggerId)]: 52
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(shapeMode)]: true,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(kSetKeepAlive)]: true,
+      [Symbol(kSetKeepAliveInitialDelay)]: 1,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: {
+        rejectUnauthorized: true,
+        ciphers: 'TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:DHE-RSA-AES256-SHA384:ECDHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA256:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!SRP:!CAMELLIA',
+        checkServerIdentity: [Function: checkServerIdentity],
+        minDHSize: 1024,
+        maxRedirects: 21,
+        maxBodyLength: Infinity,
+        protocol: 'https:',
+        path: null,
+        method: 'GET',
+        headers: [Object: null prototype] {
+          Accept: 'application/json, text/plain, */*',
+          'X-Li-User-Agent': 'LIAuthLibrary:0.0.3 com.linkedin.android:4.1.881 Asus_ASUS_Z01QD:android_9',
+          'User-Agent': 'ANDROID OS',
+          'X-User-Language': 'en',
+          'X-User-Locale': 'en_US',
+          'Accept-Language': 'en-us',
+          'Accept-Encoding': 'gzip, compress, deflate, br'
+        },
+        agents: { http: undefined, https: undefined },
+        auth: undefined,
+        family: undefined,
+        beforeRedirect: [Function: dispatchBeforeRedirect],
+        beforeRedirects: { proxy: [Function: beforeRedirect] },
+        hostname: 'www.linkedin.com',
+        port: 443,
+        agent: undefined,
+        nativeProtocols: {
+          'http:': {
+            _connectionListener: [Function: connectionListener],
+            METHODS: [Array],
+            STATUS_CODES: [Object],
+            Agent: [Function],
+            ClientRequest: [Function: ClientRequest],
+            IncomingMessage: [Function: IncomingMessage],
+            OutgoingMessage: [Function: OutgoingMessage],
+            Server: [Function: Server],
+            ServerResponse: [Function: ServerResponse],
+            createServer: [Function: createServer],
+            validateHeaderName: [Function],
+            validateHeaderValue: [Function],
+            get: [Function: get],
+            request: [Function: request],
+            setMaxIdleHTTPParsers: [Function: setMaxIdleHTTPParsers],
+            maxHeaderSize: [Getter],
+            globalAgent: [Getter/Setter]
+          },
+          'https:': {
+            Agent: [Function: Agent],
+            globalAgent: [Agent],
+            Server: [Function: Server],
+            createServer: [Function: createServer],
+            get: [Function: get],
+            request: [Function: request]
+          }
+        },
+        pathname: '/uas/authenticate',
+        _defaultAgent: Agent {
+          _events: [Object: null prototype] {
+            free: [Function (anonymous)],
+            newListener: [Function: maybeEnableKeylog]
+          },
+          _eventsCount: 2,
+          _maxListeners: undefined,
+          defaultPort: 443,
+          protocol: 'https:',
+          options: [Object: null prototype] {
+            keepAlive: true,
+            scheduling: 'lifo',
+            timeout: 5000,
+            noDelay: true,
+            path: null
+          },
+          requests: [Object: null prototype] {},
+          sockets: [Object: null prototype] {},
+          freeSockets: [Object: null prototype] {
+            'www.linkedin.com:443:::::::::::::::::::::': [Array]
+          },
+          keepAliveMsecs: 1000,
+          keepAlive: true,
+          maxSockets: Infinity,
+          maxFreeSockets: 256,
+          scheduling: 'lifo',
+          maxTotalSockets: Infinity,
+          totalSocketCount: 1,
+          maxCachedSessions: 100,
+          _sessionCache: { map: [Object], list: [Array] },
+          [Symbol(shapeMode)]: false,
+          [Symbol(kCapture)]: false
+        },
+        host: 'www.linkedin.com',
+        keepAlive: true,
+        scheduling: 'lifo',
+        timeout: 5000,
+        noDelay: true,
+        servername: 'www.linkedin.com',
+        _agentKey: 'www.linkedin.com:443:::::::::::::::::::::',
+        encoding: null,
+        keepAliveInitialDelay: 1000
+      }
+    },
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [ 'Accept', 'application/json, text/plain, */*' ],
+      'content-type': [ 'Content-Type', 'application/x-www-form-urlencoded' ],
+      'x-li-user-agent': [
+        'X-Li-User-Agent',
+        'LIAuthLibrary:0.0.3 com.linkedin.android:4.1.881 Asus_ASUS_Z01QD:android_9'
+      ],
+      'user-agent': [ 'User-Agent', 'ANDROID OS' ],
+      'x-user-language': [ 'X-User-Language', 'en' ],
+      'x-user-locale': [ 'X-User-Locale', 'en_US' ],
+      'accept-language': [ 'Accept-Language', 'en-us' ],
+      cookie: [
+        'Cookie',
+        'lang=v=2&lang=en-us; JSESSIONID="ajax:0969536195514348212"; bcookie="v=2&54845148-dbed-40df-8e70-016f7baddff8"; bscookie="v=1&2024101313282672baa878-37f0-45df-8cb2-068e20eedf7dAQEw_Ss7p0J7-b_-d8rVr0lmA2tsK1qg"; lidc="b=TGST04:s=T:r=T:a=T:p=T:g=3312:u=1:x=1:i=1728826106:t=1728912506:v=2:sig=AQFzDnsHPP5OAGt4mN0lzA1xbNgrRGsx"'
+      ],
+      'content-length': [ 'Content-Length', '107' ],
+      'accept-encoding': [ 'Accept-Encoding', 'gzip, compress, deflate, br' ],
+      host: [ 'Host', 'www.linkedin.com' ]
+    },
+    [Symbol(errored)]: null,
+    [Symbol(kHighWaterMark)]: 65536,
+    [Symbol(kRejectNonStandardBodyWrites)]: false,
+    [Symbol(kUniqueHeaders)]: null
+  },
+  response: {
+    status: 401,
+    statusText: 'Unauthorized',
+    headers: Object [AxiosHeaders] {
+      'cache-control': 'no-cache, no-store',
+      pragma: 'no-cache',
+      'content-length': '243',
+      'content-type': 'application/json',
+      expires: 'Thu, 01 Jan 1970 00:00:00 GMT',
+      vary: 'Accept-Encoding',
+      'www-authenticate': 'NONE',
+      'x-fs-uuid': '0006245bb1fb3ff74b9b9ae6f3485d44',
+      'strict-transport-security': 'max-age=31536000',
+      'x-content-type-options': 'nosniff',
+      'x-frame-options': 'sameorigin',
+      'content-security-policy': "default-src 'none'; connect-src 'self' *.licdn.com *.linkedin.com cdn.linkedin.oribi.io dpm.demdex.net/id lnkd.demdex.net blob: accounts.google.com/gsi/ linkedin.sc.omtrdc.net/b/ss/ v.clarity.ms/collect *.microsoft.com *.adnxs.com *.tealiumiq.com login.microsoftonline.com; script-src 'report-sample' 'sha256-th47JTnh6tX15SUn/I+GGmsOSXpa7dh5Skner77gxlY=' 'sha256-SSoodjUD3LGm2FfFCVHGqEb8D4UM3OOigidT2UKDcYg=' 'sha256-cKTgdnmO6+hXd85a9wKg1effVfVzenUAtUCyOKY9bQE=' 'sha256-DwtT8+ZZKpxH9pqZNAmJ3GdbLAh5SsYaXR3omTXPCns=' 'sha256-sV9jZa797T0QWBzcU/CNd4tpBhTnh+TFdLnfjlitl28=' 'sha256-aa/Q8CRBDSqTQbCIyioPhZaz+G+dbPyu7BzsjInEmiU=' 'sha256-THuVhwbXPeTR0HszASqMOnIyxqEgvGyBwSPBKBF/iMc=' 'sha256-zTIusdVJJeXz9+iox2a+pdDglzbpRpFVRzEwvW4AONk=' 'sha256-iC8MPqNLw0FDnsBf4DlSkFLNTwhkI85aouiAEB819ic=' 'sha256-2EqrEvcPzl8c6/TSGVvaVMEe7lg700MAz/te4/3kTYY=' 'sha256-y5uW69VItKj51mcc7UD9qfptDVUqicZL+bItEpvVNDw=' 'sha256-DatsFGoJ8gFkzzxo47Ou76WZ+3QBPOQHtBu9p9b3DhA=' 'sha256-k95cyM8gFgPziZe5VQ2IvJvBUVyd5zFt2CokIUwqdHE=' 'sha256-PyCXNcEkzRWqbiNr087fizmiBBrq9O6GGD8eV3P09Ik=' 'sha256-RFqsjmAF1N5LnfpaHFvPqFlVkeIS/DtTAFor+JjJJVc=' 'sha256-2SQ55Erm3CPCb+k03EpNxU9bdV3XL9TnVTriDs7INZ4=' 'sha256-S/KSPe186K/1B0JEjbIXcCdpB97krdzX05S+dHnQjUs=' 'sha256-9pXOIwF4N0gPltLd3AI69lkCjSC2H/Eb3sc5zdmUyYU=' 'sha256-jou6v/Nleyzoc+LXktAv1Fp8M807dVVxy7E/yzVljHc=' 'sha256-6E4e/3dSvj/8JZT2S2yR91mspqM6MyOpKl5lrhHsZa8=' 'sha256-3woF8BZ54TeXM+czaH3aXoaJsVpiamuAKFsXDykAR/Q=' 'sha256-vIfNcKb8ixJg1cfJIoNNYjWcm0lezj1/XpUNFiZyVsU=' 'sha256-cLsHUHFgT/VGX04cZrJ9xgm4HbzTR7ptutkxK+7BlMk=' 'sha256-BwU8jMnQYUhjOpsDVABpfddV/DlP1ZYrFcTumYw7x54=' 'sha256-wz6ika9i3WU3bpUPdhYDZeO/NrDQniDyiscN0LWnyaY=' static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com platform.linkedin.com platform-akam.linkedin.com platform-ecst.linkedin.com platform-azur.linkedin.com snap.licdn.com www.googletagmanager.com/gtag/js www.googleadservices.com/pagead/ www.google.com/pagead/ googleads.g.doubleclick.net/pagead/ adservice.google.com/pagead/ merchantpool1.linkedin.com/mdt.js; img-src data: blob: * android-webview-video-poster:; font-src data: *; style-src 'self' 'unsafe-inline' static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com; media-src 'self' *.licdn.com *.lynda.com; worker-src 'self' blob: static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com; frame-src 'self' www.youtube.com/embed/ www.youtube-nocookie.com/embed/ lnkd.demdex.net smartlock.google.com accounts.google.com player.vimeo.com *.linkedin.com www.slideshare.net *.megaphone.fm *.omny.fm *.sounder.fm msit.powerbi.com app.powerbi.com linkedin.github.io *.licdn.com *.adnxs.com acdn.adnxs-simple.com radar.cedexis.com edge-auth.microsoft.com flo.uri.sh li.protechts.net *.xlgmedia.com *.px-cloud.net merchantpool1.linkedin.com; frame-ancestors 'self' *.www.linkedin.com:*; manifest-src 'self'; report-uri https://www.linkedin.com/security/csp?f=grl",
+      'x-li-fabric': 'prod-ltx1',
+      'x-li-pop': 'afd-prod-ltx1-x',
+      'x-li-proto': 'http/1.1',
+      'x-li-uuid': 'AAYkW7H7P/dLm5rm80hdRA==',
+      'x-cache': 'CONFIG_NOCACHE',
+      'x-msedge-ref': 'Ref A: 11FF0CE6BCCE47CBB0AE9D874015017C Ref B: MAA01EDGE1517 Ref C: 2024-10-13T13:28:26Z',
+      date: 'Sun, 13 Oct 2024 13:28:27 GMT'
+    },
+    config: {
+      transitional: {
+        silentJSONParsing: true,
+        forcedJSONParsing: true,
+        clarifyTimeoutError: false
+      },
+      adapter: [ 'xhr', 'http', 'fetch' ],
+      transformRequest: [ [Function: transformRequest] ],
+      transformResponse: [ [Function: transformResponse] ],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      env: {
+        FormData: [Function: FormData] {
+          LINE_BREAK: '\r\n',
+          DEFAULT_CONTENT_TYPE: 'application/octet-stream'
+        },
+        Blob: [class Blob]
+      },
+      validateStatus: [Function: validateStatus],
+      headers: Object [AxiosHeaders] {
+        Accept: 'application/json, text/plain, */*',
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'X-Li-User-Agent': 'LIAuthLibrary:0.0.3 com.linkedin.android:4.1.881 Asus_ASUS_Z01QD:android_9',
+        'User-Agent': 'ANDROID OS',
+        'X-User-Language': 'en',
+        'X-User-Locale': 'en_US',
+        'Accept-Language': 'en-us',
+        Cookie: 'lang=v=2&lang=en-us; JSESSIONID="ajax:0969536195514348212"; bcookie="v=2&54845148-dbed-40df-8e70-016f7baddff8"; bscookie="v=1&2024101313282672baa878-37f0-45df-8cb2-068e20eedf7dAQEw_Ss7p0J7-b_-d8rVr0lmA2tsK1qg"; lidc="b=TGST04:s=T:r=T:a=T:p=T:g=3312:u=1:x=1:i=1728826106:t=1728912506:v=2:sig=AQFzDnsHPP5OAGt4mN0lzA1xbNgrRGsx"',
+        'Content-Length': '107',
+        'Accept-Encoding': 'gzip, compress, deflate, br'
+      },
+      maxRedirects: 0,
+      method: 'post',
+      url: 'https://www.linkedin.com/uas/authenticate',
+      data: 'session_key=preetpannu032%40gmail.com&session_password=lpuiamin&JSESSIONID=%22ajax%3A0969536195514348212%22'
+    },
+    request: <ref *4> ClientRequest {
+      _events: [Object: null prototype] {
+        error: [Function: handleRequestError],
+        socket: [Function: handleRequestSocket],
+        finish: [Function: requestOnFinish]
+      },
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: '107',
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: true,
+      _header: 'POST /uas/authenticate HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/x-www-form-urlencoded\r\n' +
+        'X-Li-User-Agent: LIAuthLibrary:0.0.3 com.linkedin.android:4.1.881 Asus_ASUS_Z01QD:android_9\r\n' +
+        'User-Agent: ANDROID OS\r\n' +
+        'X-User-Language: en\r\n' +
+        'X-User-Locale: en_US\r\n' +
+        'Accept-Language: en-us\r\n' +
+        'Cookie: lang=v=2&lang=en-us; JSESSIONID="ajax:0969536195514348212"; bcookie="v=2&54845148-dbed-40df-8e70-016f7baddff8"; bscookie="v=1&2024101313282672baa878-37f0-45df-8cb2-068e20eedf7dAQEw_Ss7p0J7-b_-d8rVr0lmA2tsK1qg"; lidc="b=TGST04:s=T:r=T:a=T:p=T:g=3312:u=1:x=1:i=1728826106:t=1728912506:v=2:sig=AQFzDnsHPP5OAGt4mN0lzA1xbNgrRGsx"\r\n' +
+        'Content-Length: 107\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: www.linkedin.com\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: Agent {
+        _events: [Object: null prototype] {
+          free: [Function (anonymous)],
+          newListener: [Function: maybeEnableKeylog]
+        },
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        defaultPort: 443,
+        protocol: 'https:',
+        options: [Object: null prototype] {
+          keepAlive: true,
+          scheduling: 'lifo',
+          timeout: 5000,
+          noDelay: true,
+          path: null
+        },
+        requests: [Object: null prototype] {},
+        sockets: [Object: null prototype] {},
+        freeSockets: [Object: null prototype] {
+          'www.linkedin.com:443:::::::::::::::::::::': [ [TLSSocket] ]
+        },
+        keepAliveMsecs: 1000,
+        keepAlive: true,
+        maxSockets: Infinity,
+        maxFreeSockets: 256,
+        scheduling: 'lifo',
+        maxTotalSockets: Infinity,
+        totalSocketCount: 1,
+        maxCachedSessions: 100,
+        _sessionCache: {
+          map: {
+            'www.linkedin.com:443:::::::::::::::::::::': [Buffer [Uint8Array]]
+          },
+          list: [ 'www.linkedin.com:443:::::::::::::::::::::' ]
+        },
+        [Symbol(shapeMode)]: false,
+        [Symbol(kCapture)]: false
+      },
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/uas/authenticate',
+      _ended: true,
+      res: IncomingMessage {
+        _events: {
+          close: [
+            [Function (anonymous)],
+            [Function: onclose],
+            [Function: onclose]
+          ],
+          error: [
+            [Function: onerror],
+            [Function: onError],
+            [Function: onerror]
+          ],
+          data: undefined,
+          end: [
+            [Function: responseOnEnd],
+            [Function: onend],
+            [Function: onend]
+          ],
+          readable: undefined,
+          finish: [ [Function: onfinish], [Function: onfinish] ]
+        },
+        _readableState: ReadableState {
+          highWaterMark: 65536,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 110892924
+        },
+        _maxListeners: undefined,
+        socket: null,
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        rawHeaders: [
+          'Cache-Control',
+          'no-cache, no-store',
+          'Pragma',
+          'no-cache',
+          'Content-Length',
+          '243',
+          'Content-Type',
+          'application/json',
+          'Content-Encoding',
+          'gzip',
+          'Expires',
+          'Thu, 01 Jan 1970 00:00:00 GMT',
+          'Vary',
+          'Accept-Encoding',
+          'WWW-Authenticate',
+          'NONE',
+          'X-FS-UUID',
+          '0006245bb1fb3ff74b9b9ae6f3485d44',
+          'Strict-Transport-Security',
+          'max-age=31536000',
+          'X-Content-Type-Options',
+          'nosniff',
+          'X-Frame-Options',
+          'sameorigin',
+          'Content-Security-Policy',
+          "default-src 'none'; connect-src 'self' *.licdn.com *.linkedin.com cdn.linkedin.oribi.io dpm.demdex.net/id lnkd.demdex.net blob: accounts.google.com/gsi/ linkedin.sc.omtrdc.net/b/ss/ v.clarity.ms/collect *.microsoft.com *.adnxs.com *.tealiumiq.com login.microsoftonline.com; script-src 'report-sample' 'sha256-th47JTnh6tX15SUn/I+GGmsOSXpa7dh5Skner77gxlY=' 'sha256-SSoodjUD3LGm2FfFCVHGqEb8D4UM3OOigidT2UKDcYg=' 'sha256-cKTgdnmO6+hXd85a9wKg1effVfVzenUAtUCyOKY9bQE=' 'sha256-DwtT8+ZZKpxH9pqZNAmJ3GdbLAh5SsYaXR3omTXPCns=' 'sha256-sV9jZa797T0QWBzcU/CNd4tpBhTnh+TFdLnfjlitl28=' 'sha256-aa/Q8CRBDSqTQbCIyioPhZaz+G+dbPyu7BzsjInEmiU=' 'sha256-THuVhwbXPeTR0HszASqMOnIyxqEgvGyBwSPBKBF/iMc=' 'sha256-zTIusdVJJeXz9+iox2a+pdDglzbpRpFVRzEwvW4AONk=' 'sha256-iC8MPqNLw0FDnsBf4DlSkFLNTwhkI85aouiAEB819ic=' 'sha256-2EqrEvcPzl8c6/TSGVvaVMEe7lg700MAz/te4/3kTYY=' 'sha256-y5uW69VItKj51mcc7UD9qfptDVUqicZL+bItEpvVNDw=' 'sha256-DatsFGoJ8gFkzzxo47Ou76WZ+3QBPOQHtBu9p9b3DhA=' 'sha256-k95cyM8gFgPziZe5VQ2IvJvBUVyd5zFt2CokIUwqdHE=' 'sha256-PyCXNcEkzRWqbiNr087fizmiBBrq9O6GGD8eV3P09Ik=' 'sha256-RFqsjmAF1N5LnfpaHFvPqFlVkeIS/DtTAFor+JjJJVc=' 'sha256-2SQ55Erm3CPCb+k03EpNxU9bdV3XL9TnVTriDs7INZ4=' 'sha256-S/KSPe186K/1B0JEjbIXcCdpB97krdzX05S+dHnQjUs=' 'sha256-9pXOIwF4N0gPltLd3AI69lkCjSC2H/Eb3sc5zdmUyYU=' 'sha256-jou6v/Nleyzoc+LXktAv1Fp8M807dVVxy7E/yzVljHc=' 'sha256-6E4e/3dSvj/8JZT2S2yR91mspqM6MyOpKl5lrhHsZa8=' 'sha256-3woF8BZ54TeXM+czaH3aXoaJsVpiamuAKFsXDykAR/Q=' 'sha256-vIfNcKb8ixJg1cfJIoNNYjWcm0lezj1/XpUNFiZyVsU=' 'sha256-cLsHUHFgT/VGX04cZrJ9xgm4HbzTR7ptutkxK+7BlMk=' 'sha256-BwU8jMnQYUhjOpsDVABpfddV/DlP1ZYrFcTumYw7x54=' 'sha256-wz6ika9i3WU3bpUPdhYDZeO/NrDQniDyiscN0LWnyaY=' static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com platform.linkedin.com platform-akam.linkedin.com platform-ecst.linkedin.com platform-azur.linkedin.com snap.licdn.com www.googletagmanager.com/gtag/js www.googleadservices.com/pagead/ www.google.com/pagead/ googleads.g.doubleclick.net/pagead/ adservice.google.com/pagead/ merchantpool1.linkedin.com/mdt.js; img-src data: blob: * android-webview-video-poster:; font-src data: *; style-src 'self' 'unsafe-inline' static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com; media-src 'self' *.licdn.com *.lynda.com; worker-src 'self' blob: static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com; frame-src 'self' www.youtube.com/embed/ www.youtube-nocookie.com/embed/ lnkd.demdex.net smartlock.google.com accounts.google.com player.vimeo.com *.linkedin.com www.slideshare.net *.megaphone.fm *.omny.fm *.sounder.fm msit.powerbi.com app.powerbi.com linkedin.github.io *.licdn.com *.adnxs.com acdn.adnxs-simple.com radar.cedexis.com edge-auth.microsoft.com flo.uri.sh li.protechts.net *.xlgmedia.com *.px-cloud.net merchantpool1.linkedin.com; frame-ancestors 'self' *.www.linkedin.com:*; manifest-src 'self'; report-uri https://www.linkedin.com/security/csp?f=grl",
+          'X-Li-Fabric',
+          'prod-ltx1',
+          'X-Li-Pop',
+          'afd-prod-ltx1-x',
+          'X-Li-Proto',
+          'http/1.1',
+          'X-LI-UUID',
+          'AAYkW7H7P/dLm5rm80hdRA==',
+          'X-Cache',
+          'CONFIG_NOCACHE',
+          'X-MSEdge-Ref',
+          'Ref A: 11FF0CE6BCCE47CBB0AE9D874015017C Ref B: MAA01EDGE1517 Ref C: 2024-10-13T13:28:26Z',
+          'Date',
+          'Sun, 13 Oct 2024 13:28:27 GMT'
+        ],
+        rawTrailers: [],
+        joinDuplicateHeaders: undefined,
+        aborted: false,
+        upgrade: false,
+        url: '',
+        method: null,
+        statusCode: 401,
+        statusMessage: 'Unauthorized',
+        client: <ref *1> TLSSocket {
+          _tlsOptions: {
+            allowHalfOpen: undefined,
+            pipe: false,
+            secureContext: [SecureContext],
+            isServer: false,
+            requestCert: true,
+            rejectUnauthorized: true,
+            session: undefined,
+            ALPNProtocols: undefined,
+            requestOCSP: undefined,
+            enableTrace: undefined,
+            pskCallback: undefined,
+            highWaterMark: undefined,
+            onread: undefined,
+            signal: undefined
+          },
+          _secureEstablished: true,
+          _securePending: false,
+          _newSessionPending: false,
+          _controlReleased: true,
+          secureConnecting: false,
+          _SNICallback: null,
+          servername: 'www.linkedin.com',
+          alpnProtocol: false,
+          authorized: true,
+          authorizationError: null,
+          encrypted: true,
+          _events: [Object: null prototype] {
+            close: [Array],
+            end: [Function: onReadableStreamEnd],
+            error: [Function],
+            newListener: [Function: keylogNewListener],
+            connect: undefined,
+            secure: [Function: onConnectSecure],
+            session: [Function (anonymous)],
+            free: [Function: onFree],
+            timeout: [Function: onTimeout],
+            agentRemove: [Function: onRemove],
+            data: undefined,
+            drain: undefined
+          },
+          _eventsCount: 9,
+          connecting: false,
+          _hadError: false,
+          _parent: null,
+          _host: 'www.linkedin.com',
+          _closeAfterHandlingError: false,
+          _readableState: ReadableState {
+            highWaterMark: 65536,
+            buffer: [],
+            bufferIndex: 0,
+            length: 0,
+            pipes: [],
+            awaitDrainWriters: null,
+            [Symbol(kState)]: 60303620
+          },
+          _writableState: WritableState {
+            highWaterMark: 65536,
+            length: 0,
+            corked: 0,
+            onwrite: [Function: bound onwrite],
+            writelen: 0,
+            bufferedIndex: 0,
+            pendingcb: 0,
+            [Symbol(kState)]: 17563908,
+            [Symbol(kBufferedValue)]: null,
+            [Symbol(kWriteCbValue)]: [Function (anonymous)]
+          },
+          allowHalfOpen: false,
+          _maxListeners: undefined,
+          _sockname: null,
+          _pendingData: null,
+          _pendingEncoding: '',
+          server: undefined,
+          _server: null,
+          ssl: <ref *2> TLSWrap {
+            _parent: [TCP],
+            _parentWrap: null,
+            _secureContext: [SecureContext],
+            reading: true,
+            onkeylog: [Function: onkeylog],
+            onhandshakestart: {},
+            onhandshakedone: [Function (anonymous)],
+            onocspresponse: [Function: onocspresponse],
+            onnewsession: [Function: onnewsessionclient],
+            onerror: [Function: onerror],
+            [Symbol(owner_symbol)]: [Circular *1],
+            [Symbol(resource_symbol)]: [ReusedHandle]
+          },
+          _requestCert: true,
+          _rejectUnauthorized: true,
+          timeout: 5000,
+          parser: null,
+          _httpMessage: null,
+          [Symbol(alpncallback)]: null,
+          [Symbol(res)]: <ref *2> TLSWrap {
+            _parent: [TCP],
+            _parentWrap: null,
+            _secureContext: [SecureContext],
+            reading: true,
+            onkeylog: [Function: onkeylog],
+            onhandshakestart: {},
+            onhandshakedone: [Function (anonymous)],
+            onocspresponse: [Function: onocspresponse],
+            onnewsession: [Function: onnewsessionclient],
+            onerror: [Function: onerror],
+            [Symbol(owner_symbol)]: [Circular *1],
+            [Symbol(resource_symbol)]: [ReusedHandle]
+          },
+          [Symbol(verified)]: true,
+          [Symbol(pendingSession)]: null,
+          [Symbol(async_id_symbol)]: -1,
+          [Symbol(kHandle)]: <ref *2> TLSWrap {
+            _parent: [TCP],
+            _parentWrap: null,
+            _secureContext: [SecureContext],
+            reading: true,
+            onkeylog: [Function: onkeylog],
+            onhandshakestart: {},
+            onhandshakedone: [Function (anonymous)],
+            onocspresponse: [Function: onocspresponse],
+            onnewsession: [Function: onnewsessionclient],
+            onerror: [Function: onerror],
+            [Symbol(owner_symbol)]: [Circular *1],
+            [Symbol(resource_symbol)]: [ReusedHandle]
+          },
+          [Symbol(lastWriteQueueSize)]: 0,
+          [Symbol(timeout)]: <ref *3> Timeout {
+            _idleTimeout: 5000,
+            _idlePrev: [TimersList],
+            _idleNext: [TimersList],
+            _idleStart: 1951,
+            _onTimeout: [Function: bound ],
+            _timerArgs: undefined,
+            _repeat: null,
+            _destroyed: false,
+            [Symbol(refed)]: false,
+            [Symbol(kHasPrimitive)]: false,
+            [Symbol(asyncId)]: 54,
+            [Symbol(triggerId)]: 52
+          },
+          [Symbol(kBuffer)]: null,
+          [Symbol(kBufferCb)]: null,
+          [Symbol(kBufferGen)]: null,
+          [Symbol(shapeMode)]: true,
+          [Symbol(kCapture)]: false,
+          [Symbol(kSetNoDelay)]: false,
+          [Symbol(kSetKeepAlive)]: true,
+          [Symbol(kSetKeepAliveInitialDelay)]: 1,
+          [Symbol(kBytesRead)]: 0,
+          [Symbol(kBytesWritten)]: 0,
+          [Symbol(connect-options)]: {
+            rejectUnauthorized: true,
+            ciphers: 'TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:DHE-RSA-AES256-SHA384:ECDHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA256:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!SRP:!CAMELLIA',
+            checkServerIdentity: [Function: checkServerIdentity],
+            minDHSize: 1024,
+            maxRedirects: 21,
+            maxBodyLength: Infinity,
+            protocol: 'https:',
+            path: null,
+            method: 'GET',
+            headers: [Object: null prototype],
+            agents: [Object],
+            auth: undefined,
+            family: undefined,
+            beforeRedirect: [Function: dispatchBeforeRedirect],
+            beforeRedirects: [Object],
+            hostname: 'www.linkedin.com',
+            port: 443,
+            agent: undefined,
+            nativeProtocols: [Object],
+            pathname: '/uas/authenticate',
+            _defaultAgent: [Agent],
+            host: 'www.linkedin.com',
+            keepAlive: true,
+            scheduling: 'lifo',
+            timeout: 5000,
+            noDelay: true,
+            servername: 'www.linkedin.com',
+            _agentKey: 'www.linkedin.com:443:::::::::::::::::::::',
+            encoding: null,
+            keepAliveInitialDelay: 1000
+          }
+        },
+        _consuming: false,
+        _dumped: false,
+        req: [Circular *4],
+        _eventsCount: 4,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kHeaders)]: {
+          'cache-control': 'no-cache, no-store',
+          pragma: 'no-cache',
+          'content-length': '243',
+          'content-type': 'application/json',
+          expires: 'Thu, 01 Jan 1970 00:00:00 GMT',
+          vary: 'Accept-Encoding',
+          'www-authenticate': 'NONE',
+          'x-fs-uuid': '0006245bb1fb3ff74b9b9ae6f3485d44',
+          'strict-transport-security': 'max-age=31536000',
+          'x-content-type-options': 'nosniff',
+          'x-frame-options': 'sameorigin',
+          'content-security-policy': "default-src 'none'; connect-src 'self' *.licdn.com *.linkedin.com cdn.linkedin.oribi.io dpm.demdex.net/id lnkd.demdex.net blob: accounts.google.com/gsi/ linkedin.sc.omtrdc.net/b/ss/ v.clarity.ms/collect *.microsoft.com *.adnxs.com *.tealiumiq.com login.microsoftonline.com; script-src 'report-sample' 'sha256-th47JTnh6tX15SUn/I+GGmsOSXpa7dh5Skner77gxlY=' 'sha256-SSoodjUD3LGm2FfFCVHGqEb8D4UM3OOigidT2UKDcYg=' 'sha256-cKTgdnmO6+hXd85a9wKg1effVfVzenUAtUCyOKY9bQE=' 'sha256-DwtT8+ZZKpxH9pqZNAmJ3GdbLAh5SsYaXR3omTXPCns=' 'sha256-sV9jZa797T0QWBzcU/CNd4tpBhTnh+TFdLnfjlitl28=' 'sha256-aa/Q8CRBDSqTQbCIyioPhZaz+G+dbPyu7BzsjInEmiU=' 'sha256-THuVhwbXPeTR0HszASqMOnIyxqEgvGyBwSPBKBF/iMc=' 'sha256-zTIusdVJJeXz9+iox2a+pdDglzbpRpFVRzEwvW4AONk=' 'sha256-iC8MPqNLw0FDnsBf4DlSkFLNTwhkI85aouiAEB819ic=' 'sha256-2EqrEvcPzl8c6/TSGVvaVMEe7lg700MAz/te4/3kTYY=' 'sha256-y5uW69VItKj51mcc7UD9qfptDVUqicZL+bItEpvVNDw=' 'sha256-DatsFGoJ8gFkzzxo47Ou76WZ+3QBPOQHtBu9p9b3DhA=' 'sha256-k95cyM8gFgPziZe5VQ2IvJvBUVyd5zFt2CokIUwqdHE=' 'sha256-PyCXNcEkzRWqbiNr087fizmiBBrq9O6GGD8eV3P09Ik=' 'sha256-RFqsjmAF1N5LnfpaHFvPqFlVkeIS/DtTAFor+JjJJVc=' 'sha256-2SQ55Erm3CPCb+k03EpNxU9bdV3XL9TnVTriDs7INZ4=' 'sha256-S/KSPe186K/1B0JEjbIXcCdpB97krdzX05S+dHnQjUs=' 'sha256-9pXOIwF4N0gPltLd3AI69lkCjSC2H/Eb3sc5zdmUyYU=' 'sha256-jou6v/Nleyzoc+LXktAv1Fp8M807dVVxy7E/yzVljHc=' 'sha256-6E4e/3dSvj/8JZT2S2yR91mspqM6MyOpKl5lrhHsZa8=' 'sha256-3woF8BZ54TeXM+czaH3aXoaJsVpiamuAKFsXDykAR/Q=' 'sha256-vIfNcKb8ixJg1cfJIoNNYjWcm0lezj1/XpUNFiZyVsU=' 'sha256-cLsHUHFgT/VGX04cZrJ9xgm4HbzTR7ptutkxK+7BlMk=' 'sha256-BwU8jMnQYUhjOpsDVABpfddV/DlP1ZYrFcTumYw7x54=' 'sha256-wz6ika9i3WU3bpUPdhYDZeO/NrDQniDyiscN0LWnyaY=' static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com platform.linkedin.com platform-akam.linkedin.com platform-ecst.linkedin.com platform-azur.linkedin.com snap.licdn.com www.googletagmanager.com/gtag/js www.googleadservices.com/pagead/ www.google.com/pagead/ googleads.g.doubleclick.net/pagead/ adservice.google.com/pagead/ merchantpool1.linkedin.com/mdt.js; img-src data: blob: * android-webview-video-poster:; font-src data: *; style-src 'self' 'unsafe-inline' static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com; media-src 'self' *.licdn.com *.lynda.com; worker-src 'self' blob: static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com; frame-src 'self' www.youtube.com/embed/ www.youtube-nocookie.com/embed/ lnkd.demdex.net smartlock.google.com accounts.google.com player.vimeo.com *.linkedin.com www.slideshare.net *.megaphone.fm *.omny.fm *.sounder.fm msit.powerbi.com app.powerbi.com linkedin.github.io *.licdn.com *.adnxs.com acdn.adnxs-simple.com radar.cedexis.com edge-auth.microsoft.com flo.uri.sh li.protechts.net *.xlgmedia.com *.px-cloud.net merchantpool1.linkedin.com; frame-ancestors 'self' *.www.linkedin.com:*; manifest-src 'self'; report-uri https://www.linkedin.com/security/csp?f=grl",
+          'x-li-fabric': 'prod-ltx1',
+          'x-li-pop': 'afd-prod-ltx1-x',
+          'x-li-proto': 'http/1.1',
+          'x-li-uuid': 'AAYkW7H7P/dLm5rm80hdRA==',
+          'x-cache': 'CONFIG_NOCACHE',
+          'x-msedge-ref': 'Ref A: 11FF0CE6BCCE47CBB0AE9D874015017C Ref B: MAA01EDGE1517 Ref C: 2024-10-13T13:28:26Z',
+          date: 'Sun, 13 Oct 2024 13:28:27 GMT'
+        },
+        [Symbol(kHeadersCount)]: 40,
+        [Symbol(kTrailers)]: null,
+        [Symbol(kTrailersCount)]: 0
+      },
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: true,
+      host: 'www.linkedin.com',
+      protocol: 'https:',
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kChunkedBuffer)]: [],
+      [Symbol(kChunkedLength)]: 0,
+      [Symbol(kSocket)]: <ref *1> TLSSocket {
+        _tlsOptions: {
+          allowHalfOpen: undefined,
+          pipe: false,
+          secureContext: SecureContext { context: SecureContext {} },
+          isServer: false,
+          requestCert: true,
+          rejectUnauthorized: true,
+          session: undefined,
+          ALPNProtocols: undefined,
+          requestOCSP: undefined,
+          enableTrace: undefined,
+          pskCallback: undefined,
+          highWaterMark: undefined,
+          onread: undefined,
+          signal: undefined
+        },
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        secureConnecting: false,
+        _SNICallback: null,
+        servername: 'www.linkedin.com',
+        alpnProtocol: false,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: [Object: null prototype] {
+          close: [
+            [Function: onSocketCloseDestroySSL],
+            [Function],
+            [Function: onClose]
+          ],
+          end: [Function: onReadableStreamEnd],
+          error: [Function: bound onceWrapper] {
+            listener: [Function: freeSocketErrorListener]
+          },
+          newListener: [Function: keylogNewListener],
+          connect: undefined,
+          secure: [Function: onConnectSecure],
+          session: [Function (anonymous)],
+          free: [Function: onFree],
+          timeout: [Function: onTimeout],
+          agentRemove: [Function: onRemove],
+          data: undefined,
+          drain: undefined
+        },
+        _eventsCount: 9,
+        connecting: false,
+        _hadError: false,
+        _parent: null,
+        _host: 'www.linkedin.com',
+        _closeAfterHandlingError: false,
+        _readableState: ReadableState {
+          highWaterMark: 65536,
+          buffer: [],
+          bufferIndex: 0,
+          length: 0,
+          pipes: [],
+          awaitDrainWriters: null,
+          [Symbol(kState)]: 60303620
+        },
+        _writableState: WritableState {
+          highWaterMark: 65536,
+          length: 0,
+          corked: 0,
+          onwrite: [Function: bound onwrite],
+          writelen: 0,
+          bufferedIndex: 0,
+          pendingcb: 0,
+          [Symbol(kState)]: 17563908,
+          [Symbol(kBufferedValue)]: null,
+          [Symbol(kWriteCbValue)]: [Function (anonymous)]
+        },
+        allowHalfOpen: false,
+        _maxListeners: undefined,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: <ref *2> TLSWrap {
+          _parent: TCP {
+            reading: [Getter/Setter],
+            onconnection: null,
+            [Symbol(owner_symbol)]: [Circular *1]
+          },
+          _parentWrap: null,
+          _secureContext: SecureContext { context: SecureContext {} },
+          reading: true,
+          onkeylog: [Function: onkeylog],
+          onhandshakestart: {},
+          onhandshakedone: [Function (anonymous)],
+          onocspresponse: [Function: onocspresponse],
+          onnewsession: [Function: onnewsessionclient],
+          onerror: [Function: onerror],
+          [Symbol(owner_symbol)]: [Circular *1],
+          [Symbol(resource_symbol)]: ReusedHandle { type: 61, handle: [Circular *2] }
+        },
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        timeout: 5000,
+        parser: null,
+        _httpMessage: null,
+        [Symbol(alpncallback)]: null,
+        [Symbol(res)]: <ref *2> TLSWrap {
+          _parent: TCP {
+            reading: [Getter/Setter],
+            onconnection: null,
+            [Symbol(owner_symbol)]: [Circular *1]
+          },
+          _parentWrap: null,
+          _secureContext: SecureContext { context: SecureContext {} },
+          reading: true,
+          onkeylog: [Function: onkeylog],
+          onhandshakestart: {},
+          onhandshakedone: [Function (anonymous)],
+          onocspresponse: [Function: onocspresponse],
+          onnewsession: [Function: onnewsessionclient],
+          onerror: [Function: onerror],
+          [Symbol(owner_symbol)]: [Circular *1],
+          [Symbol(resource_symbol)]: ReusedHandle { type: 61, handle: [Circular *2] }
+        },
+        [Symbol(verified)]: true,
+        [Symbol(pendingSession)]: null,
+        [Symbol(async_id_symbol)]: -1,
+        [Symbol(kHandle)]: <ref *2> TLSWrap {
+          _parent: TCP {
+            reading: [Getter/Setter],
+            onconnection: null,
+            [Symbol(owner_symbol)]: [Circular *1]
+          },
+          _parentWrap: null,
+          _secureContext: SecureContext { context: SecureContext {} },
+          reading: true,
+          onkeylog: [Function: onkeylog],
+          onhandshakestart: {},
+          onhandshakedone: [Function (anonymous)],
+          onocspresponse: [Function: onocspresponse],
+          onnewsession: [Function: onnewsessionclient],
+          onerror: [Function: onerror],
+          [Symbol(owner_symbol)]: [Circular *1],
+          [Symbol(resource_symbol)]: ReusedHandle { type: 61, handle: [Circular *2] }
+        },
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: <ref *3> Timeout {
+          _idleTimeout: 5000,
+          _idlePrev: TimersList {
+            _idleNext: [Circular *3],
+            _idlePrev: [Circular *3],
+            expiry: 6032,
+            id: -9007199254740990,
+            msecs: 5000,
+            priorityQueuePosition: 2
+          },
+          _idleNext: TimersList {
+            _idleNext: [Circular *3],
+            _idlePrev: [Circular *3],
+            expiry: 6032,
+            id: -9007199254740990,
+            msecs: 5000,
+            priorityQueuePosition: 2
+          },
+          _idleStart: 1951,
+          _onTimeout: [Function: bound ],
+          _timerArgs: undefined,
+          _repeat: null,
+          _destroyed: false,
+          [Symbol(refed)]: false,
+          [Symbol(kHasPrimitive)]: false,
+          [Symbol(asyncId)]: 54,
+          [Symbol(triggerId)]: 52
+        },
+        [Symbol(kBuffer)]: null,
+        [Symbol(kBufferCb)]: null,
+        [Symbol(kBufferGen)]: null,
+        [Symbol(shapeMode)]: true,
+        [Symbol(kCapture)]: false,
+        [Symbol(kSetNoDelay)]: false,
+        [Symbol(kSetKeepAlive)]: true,
+        [Symbol(kSetKeepAliveInitialDelay)]: 1,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(connect-options)]: {
+          rejectUnauthorized: true,
+          ciphers: 'TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:DHE-RSA-AES256-SHA384:ECDHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA256:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!SRP:!CAMELLIA',
+          checkServerIdentity: [Function: checkServerIdentity],
+          minDHSize: 1024,
+          maxRedirects: 21,
+          maxBodyLength: Infinity,
+          protocol: 'https:',
+          path: null,
+          method: 'GET',
+          headers: [Object: null prototype] {
+            Accept: 'application/json, text/plain, */*',
+            'X-Li-User-Agent': 'LIAuthLibrary:0.0.3 com.linkedin.android:4.1.881 Asus_ASUS_Z01QD:android_9',
+            'User-Agent': 'ANDROID OS',
+            'X-User-Language': 'en',
+            'X-User-Locale': 'en_US',
+            'Accept-Language': 'en-us',
+            'Accept-Encoding': 'gzip, compress, deflate, br'
+          },
+          agents: { http: undefined, https: undefined },
+          auth: undefined,
+          family: undefined,
+          beforeRedirect: [Function: dispatchBeforeRedirect],
+          beforeRedirects: { proxy: [Function: beforeRedirect] },
+          hostname: 'www.linkedin.com',
+          port: 443,
+          agent: undefined,
+          nativeProtocols: { 'http:': [Object], 'https:': [Object] },
+          pathname: '/uas/authenticate',
+          _defaultAgent: Agent {
+            _events: [Object: null prototype],
+            _eventsCount: 2,
+            _maxListeners: undefined,
+            defaultPort: 443,
+            protocol: 'https:',
+            options: [Object: null prototype],
+            requests: [Object: null prototype] {},
+            sockets: [Object: null prototype] {},
+            freeSockets: [Object: null prototype],
+            keepAliveMsecs: 1000,
+            keepAlive: true,
+            maxSockets: Infinity,
+            maxFreeSockets: 256,
+            scheduling: 'lifo',
+            maxTotalSockets: Infinity,
+            totalSocketCount: 1,
+            maxCachedSessions: 100,
+            _sessionCache: [Object],
+            [Symbol(shapeMode)]: false,
+            [Symbol(kCapture)]: false
+          },
+          host: 'www.linkedin.com',
+          keepAlive: true,
+          scheduling: 'lifo',
+          timeout: 5000,
+          noDelay: true,
+          servername: 'www.linkedin.com',
+          _agentKey: 'www.linkedin.com:443:::::::::::::::::::::',
+          encoding: null,
+          keepAliveInitialDelay: 1000
+        }
+      },
+      [Symbol(kOutHeaders)]: [Object: null prototype] {
+        accept: [ 'Accept', 'application/json, text/plain, */*' ],
+        'content-type': [ 'Content-Type', 'application/x-www-form-urlencoded' ],
+        'x-li-user-agent': [
+          'X-Li-User-Agent',
+          'LIAuthLibrary:0.0.3 com.linkedin.android:4.1.881 Asus_ASUS_Z01QD:android_9'
+        ],
+        'user-agent': [ 'User-Agent', 'ANDROID OS' ],
+        'x-user-language': [ 'X-User-Language', 'en' ],
+        'x-user-locale': [ 'X-User-Locale', 'en_US' ],
+        'accept-language': [ 'Accept-Language', 'en-us' ],
+        cookie: [
+          'Cookie',
+          'lang=v=2&lang=en-us; JSESSIONID="ajax:0969536195514348212"; bcookie="v=2&54845148-dbed-40df-8e70-016f7baddff8"; bscookie="v=1&2024101313282672baa878-37f0-45df-8cb2-068e20eedf7dAQEw_Ss7p0J7-b_-d8rVr0lmA2tsK1qg"; lidc="b=TGST04:s=T:r=T:a=T:p=T:g=3312:u=1:x=1:i=1728826106:t=1728912506:v=2:sig=AQFzDnsHPP5OAGt4mN0lzA1xbNgrRGsx"'
+        ],
+        'content-length': [ 'Content-Length', '107' ],
+        'accept-encoding': [ 'Accept-Encoding', 'gzip, compress, deflate, br' ],
+        host: [ 'Host', 'www.linkedin.com' ]
+      },
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 65536,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    data: {
+      login_result: 'CHALLENGE',
+      challenge_url: 'https://www.linkedin.com/checkpoint/lg/direct-login-submit?addDetailedLoginResult=add&dropLiatCookie=drop&csrfToken=ajax%3A0969536195514348212&pSIdString=febc2dc4-f0f0-40f4-b9c6-263d18d4e5f3&ut=0jYMT24o38Grs1'
+    }
+  },
+  status: 401
+}

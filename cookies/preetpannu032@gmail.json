@@ -1,0 +1,55 @@
+{
+  "version": "tough-cookie@5.0.0",
+  "storeType": "MemoryCookieStore",
+  "rejectPublicSuffixes": true,
+  "enableLooseMode": false,
+  "allowSpecialUseDomain": true,
+  "prefixSecurity": "silent",
+  "cookies": [
+    {
+      "key": "lidc",
+      "value": "\"b=OGST04:s=O:r=O:a=O:p=O:g=3326:u=1:x=1:i=1728827024:t=1728913424:v=2:sig=AQF1Au2RheMjxXnj4scUwo3-tXhsQJqr\"",
+      "domain": "linkedin.com",
+      "path": "/",
+      "hostOnly": false,
+      "creation": "2024-10-13T13:43:49.316Z",
+      "lastAccessed": "2024-10-13T13:43:49.317Z"
+    },
+    {
+      "key": "bscookie",
+      "value": "\"v=1&20241013134344e1c8337a-5c58-4ced-8cf6-22aa4f61a4c0AQHHv31_qH8hEA-qZ0Hk5fcyZew2IX4f\"",
+      "domain": "linkedin.com",
+      "path": "/",
+      "hostOnly": false,
+      "creation": "2024-10-13T13:43:49.316Z",
+      "lastAccessed": "2024-10-13T13:43:49.317Z"
+    },
+    {
+      "key": "bcookie",
+      "value": "\"v=2&12438c2b-efde-43f6-811c-593a1c8cd248\"",
+      "domain": "linkedin.com",
+      "path": "/",
+      "hostOnly": false,
+      "creation": "2024-10-13T13:43:49.316Z",
+      "lastAccessed": "2024-10-13T13:43:49.317Z"
+    },
+    {
+      "key": "JSESSIONID",
+      "value": "\"ajax:6792334047429950158\"",
+      "domain": "linkedin.com",
+      "path": "/",
+      "hostOnly": false,
+      "creation": "2024-10-13T13:43:49.316Z",
+      "lastAccessed": "2024-10-13T13:43:49.317Z"
+    },
+    {
+      "key": "lang",
+      "value": "v=2&lang=en-us",
+      "domain": "linkedin.com",
+      "path": "/",
+      "hostOnly": false,
+      "creation": "2024-10-13T13:43:49.317Z",
+      "lastAccessed": "2024-10-13T13:43:49.317Z"
+    }
+  ]
+}

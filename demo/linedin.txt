@@ -1,0 +1,5 @@
+this.cookiesDir /Users/admin/Desktop/HQ-POC/HQ-linkedInAPI.v2/cookies
+Attempting to use cached cookies
+Requesting new cookies.
+cookies lang=v=2&lang=en-us; JSESSIONID="ajax:5717919402582976416"; bcookie="v=2&01f5fca0-744d-431b-8661-c9031d252157"; bscookie="v=1&20241013132323f16a8db7-dc14-4ac5-8077-a00c3acab4dfAQGUQaLhXOOaIYYDD6wF07OO6aRSJ0Ff"; lidc="b=OGST04:s=O:r=O:a=O:p=O:g=3326:u=1:x=1:i=1728825803:t=1728912203:v=2:sig=AQEViMlnlSJlgZAD9T8DsqKPwROkE4Ty"
+Authentication error: Request failed with status code 401
